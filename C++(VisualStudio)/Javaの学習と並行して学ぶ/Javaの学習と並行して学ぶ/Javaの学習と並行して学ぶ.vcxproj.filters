@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\_0章">
+      <UniqueIdentifier>{75876484-57a8-4c2c-8463-1c85ca9548b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\_1章">
+      <UniqueIdentifier>{75f2e120-83d1-4754-87b7-7b34a6e64126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\_2章">
+      <UniqueIdentifier>{aa872805-e61d-4acf-b589-d586d6abb71f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ひな形.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="class1.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="_0_2.cpp">
+      <Filter>ソース ファイル\_0章</Filter>
+    </ClCompile>
+    <ClCompile Include="_1ー3ー1.cpp">
+      <Filter>ソース ファイル\_1章</Filter>
+    </ClCompile>
+    <ClCompile Include="_1ー3ー2.cpp">
+      <Filter>ソース ファイル\_1章</Filter>
+    </ClCompile>
+    <ClCompile Include="_2ー2.cpp">
+      <Filter>ソース ファイル\_2章</Filter>
+    </ClCompile>
+    <ClCompile Include="_2ー4.cpp">
+      <Filter>ソース ファイル\_2章</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Javaの学習と並行して学ぶ.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="class1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
