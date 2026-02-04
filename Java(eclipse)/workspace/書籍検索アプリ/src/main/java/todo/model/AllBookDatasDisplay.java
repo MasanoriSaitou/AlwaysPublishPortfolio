@@ -33,15 +33,16 @@ public class AllBookDatasDisplay {
 	public ArrayList<BookDataBean> allBookDataDisplay(HttpServletRequest request) 
 		throws ServletException, IOException {
 		
-		ArrayList<BookDataBean> resultList = resultListReturn();
+		String[] chkBoxDataArray = searchInformationDataManager.getPushedChkBox();
+		ArrayList<BookDataBean> resultList = resultListReturn(chkBoxDataArray);
 		searchInformationDataManager.setSearchResultList(resultList);
 		searchInformationDataManager.pushSearchButton(true,request);
 		return resultList;		
 	}
 	
-	private ArrayList<BookDataBean> resultListReturn(){
+	private ArrayList<BookDataBean> resultListReturn(String[] chkBoxDataArray){
 		
-		BookDataBean[] allBookData = bookDataManager.getCloneAllBookData();
+		BookDataBean[] allBookData = bookDataManager.mergedBookDataBeanGet(chkBoxDataArray);
 		return new ArrayList<BookDataBean>(Arrays.asList(allBookData));
 	}
 }

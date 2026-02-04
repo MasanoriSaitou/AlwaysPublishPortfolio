@@ -17,6 +17,7 @@ public class SearchInformationBean implements Serializable{
 	private String keyWord;  //入力されたキーワード
 	private String pushedButton;   //押下されたボタン
 	private String pushedRadio;  //選択されたラジオボタン
+	private String[] pushedChkBox;  //選択されたチェックボックス
 	private Boolean isButtonPush;  //検索ボタンが押下されたか
 	private String pushedButtonCopy;  //押されたボタンのコピー
 	
@@ -53,6 +54,12 @@ public class SearchInformationBean implements Serializable{
 	public void setPushedRadio(String pushedRadio) {
 		this.pushedRadio = pushedRadio;
 	}
+	public String[] getPushedChkBox() {
+		return pushedChkBox;
+	}
+	public void setPushedChkBox(String[] pushedChkBox) {
+		this.pushedChkBox = pushedChkBox;
+	}
 	public Boolean getIsButtonPush() {
 		return isButtonPush;
 	}
@@ -76,10 +83,11 @@ public class SearchInformationBean implements Serializable{
 		String keyWord,  //入力されたキーワード
 		String pushedButton,   //押下されたボタン
 		String pushedRadio,  //選択されたラジオボタン
+		String[] pushedChkBox,  //選択されたチェックボックス
 		Boolean isButtonPush) {  //検索ボタンが押下されたか
 
 		initializeField(searchResultList,selectNo,keyWord,pushedButton,pushedRadio,
-			isButtonPush);
+			pushedChkBox,isButtonPush);
 	}
 	
 	private void initializeField() {
@@ -89,6 +97,7 @@ public class SearchInformationBean implements Serializable{
 		keyWord = "";  //入力されたキーワード
 		pushedButton = "";   //押下されたボタン
 		pushedRadio = "";  //選択されたラジオボタン
+		pushedChkBox = new String[] {};  //選択されたチェックボックス
 		isButtonPush = false;  //検索ボタンが押下されたか
 		pushedButtonCopy = pushedButton;
 	}
@@ -98,6 +107,7 @@ public class SearchInformationBean implements Serializable{
 		String keyWord,  //入力されたキーワード
 		String pushedButton,   //押下されたボタン
 		String pushedRadio,  //選択されたラジオボタン
+		String[] pushedChkBox,  //選択されたチェックボックス
 		Boolean isButtonPush) {  //検索ボタンが押下されたか
 		
 		this.searchResultList = searchResultList;
@@ -105,6 +115,7 @@ public class SearchInformationBean implements Serializable{
 		this.keyWord = keyWord;
 		this.pushedButton = pushedButton;
 		this.pushedRadio = pushedRadio;
+		this.pushedChkBox = pushedChkBox;
 		this.isButtonPush = isButtonPush;
 		this.pushedButtonCopy = pushedButton;
 	}

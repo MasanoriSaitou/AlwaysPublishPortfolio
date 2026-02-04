@@ -72,7 +72,7 @@ public class BookDataBean implements Serializable{
 		initializeField();
 	}
 	
-	public BookDataBean(String[] strs) {
+	public BookDataBean(String... strs) {
 		
 		initializeField(strs);
 	}

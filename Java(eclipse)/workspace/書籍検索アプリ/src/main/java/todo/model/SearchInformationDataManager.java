@@ -20,8 +20,9 @@ public class SearchInformationDataManager {
 			new ArrayList<BookDataBean>(),
 			null,
 	        "",
-	        "全件検索",
+	        "全件表示",
 	        "keyWordSearch",
+	        new String[]{"fromFileSearch"},
 	        false
 		);
 	}
@@ -67,6 +68,12 @@ public class SearchInformationDataManager {
 		Object requestGetParam = request.getParameter(target);
 		return (null != requestGetParam)? requestGetParam : nowParam;
 	}
+	
+	private String[] parameterAdjustment(String target,String[] nowParam,HttpServletRequest request) {
+		
+		String[] requestGetParam = request.getParameterValues(target);
+		return (null != requestGetParam)? requestGetParam : nowParam;
+	}
 
 	public void parameterGetFromForm(HttpServletRequest request) {
 		
@@ -83,6 +90,10 @@ public class SearchInformationDataManager {
 		String pushedRadio = searchInfo.getPushedRadio();
 		pushedRadio = (String)parameterAdjustment("pushedRadio",pushedRadio,request);
 		searchInfo.setPushedRadio(pushedRadio);
+		//選択されたチェックボックス
+		String[] pushedChkBox = searchInfo.getPushedChkBox();
+		pushedChkBox = parameterAdjustment("pushedChkBox",pushedChkBox,request);
+		searchInfo.setPushedChkBox(pushedChkBox);
 		//検索ボタンが押下されたかボタン
 		Boolean isButtonPush = searchInfo.getIsButtonPush();
 		isButtonPush = (Boolean)parameterAdjustment("isButtonPush",isButtonPush,request);
@@ -114,6 +125,11 @@ public class SearchInformationDataManager {
 	public String getPushedRadio() {
 		
 		return searchInfo.getPushedRadio();
+	}
+	
+	public String[] getPushedChkBox() {
+		
+		return searchInfo.getPushedChkBox();
 	}
 	
 	public void setSearchResultList(List<BookDataBean> searchResultList) {

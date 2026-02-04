@@ -56,7 +56,7 @@ public class BookSearchServlet extends HttpServlet {
 			
 			//何らかの番号が選択されている
 			resultDisplay(request, response);
-		}else if(searchInfoManager.isPushedButtonCopyEquals("Don'tOverWrite")){
+		}else {//if(searchInfoManager.isPushedButtonCopyEquals("Don'tOverWrite")){
 			
 			//リダイレクト後
 			doPost(request,response);
@@ -66,6 +66,7 @@ public class BookSearchServlet extends HttpServlet {
 	public void initializeParameter(HttpServletRequest request, HttpServletResponse response) 
 		throws ServletException, IOException{
 		
+		//CSVデータを読みこむ
 		FILE_PATH = this.getServletContext().getRealPath("/Resources/") + FILE_NAME;
 		bookSearchManager.loadBookDatas(FILE_PATH);
         //パラメータ初期化
@@ -107,7 +108,7 @@ public class BookSearchServlet extends HttpServlet {
 			break;
 			//-----------------
 			//全件表示
-			case "全件検索":
+			case "全件表示":
 				allBookDataDisplay(request,response);
 			break;
 			//-----------------
@@ -163,7 +164,7 @@ public class BookSearchServlet extends HttpServlet {
 	//検索エンジンで検索をかける
 	public void searchSearchEngine(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		
-		bookSearchManager.searchSearchEngine("Don'tOverWrite",request, response);
+		//bookSearchManager.searchSearchEngine("Don'tOverWrite",request, response);
 	}
 	
 	private void transForward(String transPath,HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{

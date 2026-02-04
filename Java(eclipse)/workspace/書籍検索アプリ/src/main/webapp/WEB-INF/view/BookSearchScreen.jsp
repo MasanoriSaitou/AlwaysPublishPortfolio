@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" %>
 <%@ page import = "java.util.ArrayList" %>
+<%@ page import = "java.util.Arrays" %>
 <%@ page import = "todo.model.beans.BookDataBean"%>
 <jsp:useBean id="searchInfo" scope="request" class="todo.model.beans.SearchInformationBean" />
 <!DOCTYPE html>
@@ -15,19 +16,17 @@
 	</h2>
 	<form method="post" action="./BookSearchServlet">
 		本を検索する
-		<input type="text" name="keyWord" placeholder="キーワードを入力"  autofocus
-		<% if(searchInfo.getKeyWord() != null){
-			out.print("value = "+ searchInfo.getKeyWord()); 
-		}
-		%>>
+		<input type="text" id="keyWord" name="keyWord" placeholder="キーワードを入力"  autofocus
+		value="<%= searchInfo.getKeyWord() == null ? "" : searchInfo.getKeyWord() %>">
+		
 		<!-- キーワード検索ボタン -->
 		<input type="submit" name = "pushedButton" value="検索" id="searchButton">
 		
 		<!-- 全件表示ボタン -->
-		<input type="submit" name = "pushedButton" value="全件検索" id="allDisplayButton">
+		<input type="submit" name = "pushedButton" value="全件表示" id="allDisplayButton">
 		
-		<!-- 検索エンジンで検索ボタン -->
-		<input type="submit" name = "pushedButton" value="検索エンジンで検索" id="searchEngineButton">
+		<!-- Webで検索ボタン -->
+		<input type="button" name = "pushedButton" value="Webで検索" id="searchEngineButton" onclick="openGoogle();">
 		
 		<!-- ラジオボタン -->
 		<div>
@@ -37,6 +36,15 @@
 		    <input type="radio" id="titleSearch" name="pushedRadio" value="titleSearch"
 		    <% if("titleSearch".equals(searchInfo.getPushedRadio())){ out.print("checked"); }%>>
 		    <label for="titleSearch">本のタイトルで検索</label>
+		</div>
+		<!-- チェックボックス -->
+		<div>
+		    <input type="checkbox" id="fromFileSearch" name="pushedChkBox" value="fromFileSearch"
+		    <% if(Arrays.asList(searchInfo.getPushedChkBox()).contains("fromFileSearch")){ out.print("checked"); } %>>
+		    <label for="fromFileSearch">ファイルから検索</label>
+		    <input type="checkbox" id="fromDataBaseSearch" name="pushedChkBox" value="fromDataBaseSearch"
+		    <% if(Arrays.asList(searchInfo.getPushedChkBox()).contains("fromDataBaseSearch")){ out.print("checked"); }%>>
+		    <label for="fromDataBaseSearch">データベースから検索</label>
 		</div>
 		
 		<%
@@ -79,5 +87,6 @@
 		}
 		%>
 	</form>
+	<script src="./js/main.js"></script>
 </body>
 </html>
