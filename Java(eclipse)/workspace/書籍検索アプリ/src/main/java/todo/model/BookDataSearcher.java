@@ -49,7 +49,7 @@ public class BookDataSearcher {
 	}
 	
 	//------------
-	//キーワードで検索
+	//検索
 	public ArrayList<BookDataBean> keyWordSearch(String pushedRadio,String keyWord) {
 		
 		String[] chkBoxDataArray = searchInformationDataManager.getPushedChkBox();
@@ -64,16 +64,16 @@ public class BookDataSearcher {
 		return searchResultList;
 	}
 	
-	//------------
-	//本のタイトルで検索
-	public ArrayList<BookDataBean> bookTitleNameSearch(String titleName) {
-		
-		var searchResultList = 
-			(ArrayList<BookDataBean>)bookTitleNameSearchDetail(bookDataManager.getBookDataBeans(),titleName);
-		searchInformationDataManager.setSearchResultList(searchResultList);
-		return searchResultList;
-	}
-	
+//	//------------
+//	//本のタイトルで検索
+//	public ArrayList<BookDataBean> bookTitleNameSearch(String titleName) {
+//		
+//		var searchResultList = 
+//			(ArrayList<BookDataBean>)bookTitleNameSearchDetail(bookDataManager.getBookDataBeans(),titleName);
+//		searchInformationDataManager.setSearchResultList(searchResultList);
+//		return searchResultList;
+//	}
+//	
 	private List<BookDataBean> keyWordSearchDetail(BookDataBean[] bookDataBeans,String keyWord) {
 		
 		List<BookDataBean> searchResultList = new ArrayList<>();

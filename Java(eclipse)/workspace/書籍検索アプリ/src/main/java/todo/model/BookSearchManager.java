@@ -5,23 +5,25 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
+import todo.model.beans.BookDataBean;
+
 public class BookSearchManager {
 
 	private BookDataManager bookDataManager; //CSV読み込みの管理
 	private BookDataSearcher bookDataSearcher; //検索ボタンの動作
 	private AllBookDatasDisplay allBookDatasDisplay; //全件表示の動作
 	private SearchEngineSearch searchEngineSearch; //検索エンジンでの検索の動作
-	private SearchInformationDataManager searchInfoManager;
+	private SearchInformationDataManager searchInfoManager; 
 	
 	//------------
 	//コンストラクタ
 	public BookSearchManager(SearchInformationDataManager searchInfoManager) {
 		
 		this.searchInfoManager = searchInfoManager;
-		initializeParameters();
+		initializeParameters(searchInfoManager);
 	}
 	
-	private void initializeParameters() {
+	private void initializeParameters(SearchInformationDataManager searchInfoManager) {
 		
 		bookDataManager = new BookDataManager();
 		bookDataSearcher = new BookDataSearcher(bookDataManager,searchInfoManager);
@@ -34,15 +36,29 @@ public class BookSearchManager {
 		bookDataManager.loadBookDatas(filePath);
 	}
 	
-	public void searchBookData(String keyWord,HttpServletRequest request) {
+	public void searchBookData(HttpServletRequest request) {
 		
+		String keyWord = searchInfoManager.getKeyWord();
 		bookDataSearcher.searchBookData(keyWord,request);
+		//パラメータをjspへ渡す
+		searchInfoManager.parameterSet(request);
 	}
 	
 	public void allBookDataDisplay(HttpServletRequest request) 
 		throws ServletException, IOException {
 		
 		allBookDatasDisplay.allBookDataDisplay(request);
+		//パラメータをjspへ渡す
+		searchInfoManager.parameterSet(request);
+	}
+	
+	public void searchResultDisplay(HttpServletRequest request) {
+		
+		//パラメータをjspへ渡す
+		searchInfoManager.parameterSet(request);
+		BookDataBean resultRecord = searchInfoManager.getResultRecord();
+		request.setAttribute("resultRecord",resultRecord);
+		request.setAttribute("selectNo",searchInfoManager.setSelectNoSetNullAndReturn());
 	}
 	
 	/*public void searchSearchEngine(String target,HttpServletRequest request, 

@@ -1,12 +1,14 @@
 package todo.model;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import todo.model.beans.BookDataBean;
 
 public class BookDataManager {
 	
-	private CsvReader csvReader;
-    private BookDataBean[] bookDataBeans;
+	private CsvData csvData;
+	private DatabaseData databaseData;
 	
 	@FunctionalInterface
 	public interface FunctionPointer {
@@ -29,29 +31,14 @@ public class BookDataManager {
 	//コンストラクタ
 	public BookDataManager() {
 		
-		bookDataBeans = new BookDataBean[0];
-		csvReader = new CsvReader(bookDataBeans);
-	}
-	public BookDataManager(BookDataBean[] bookDataBeans) {
-		
-		this.bookDataBeans = bookDataBeans;
-		csvReader = new CsvReader(bookDataBeans);
+		csvData = new CsvData();
+		databaseData = new DatabaseData();
 	}
 	
 	public BookDataBean[] loadBookDatas(String filePath) {
 		
-        return bookDataBeans = csvReader.readCsv(filePath);
+        return csvData.loadBookDatas(filePath);
     }
-	
-	public BookDataBean[] getCloneAllBookData() {
-		
-		return bookDataBeans.clone();
-	}
-	
-	public BookDataBean[] getBookDataBeans() {
-		
-		return bookDataBeans;
-	}
 	
 	public boolean stringRegexCheck(String target,String keyWord) {
 		
@@ -64,13 +51,13 @@ public class BookDataManager {
 		return bookData.getBookName();
 	}
 	
-	private String getAuthor(BookDataBean bookData) {
+	public String getAuthor(BookDataBean bookData) {
 			
 		//著者で検索
 		return bookData.getAuthor();
 	}
 	
-	private String getFictitiousISBN(BookDataBean bookData) {
+	public String getFictitiousISBN(BookDataBean bookData) {
 		
 		//架空ISBNコードで検索
 		return bookData.getFictitiousISBN();
@@ -78,32 +65,21 @@ public class BookDataManager {
 	
 	public BookDataBean[] mergedBookDataBeanGet(String[] chkBoxDataArray) {
 		
-		var Result = new BookDataBean[0];
-		var dbResult = new BookDataBean[0];
-		
-		//ファイルから検索
-		if(Arrays.asList(chkBoxDataArray).contains("fromFileSearch")) {
-			
-			Result = getBookDataBeans();
-		}
-		//データベースから検索
-		if(Arrays.asList(chkBoxDataArray).contains("fromDataBaseSearch")) {
-			
-			try {
-				
-				dbResult = BookDataListDAO.findAll().toArray(BookDataBean[]::new);
-			}catch(Exception e) {
-				
-				System.out.println("例外が発生しましたが、問題なく継続できました。");
-			}
-		}
-		return arrayConcat(Result,dbResult);
-	}
-	
-	public static <T> T[] arrayConcat(T[] a, T[] b) {
-		
-	    T[] result = Arrays.copyOf(a, a.length + b.length);
-	    System.arraycopy(b, 0, result, a.length, b.length);
-	    return result;
+	    List<ILoadData> list = new ArrayList<>();
+
+	    //ファイルから検索
+	    if (Arrays.asList(chkBoxDataArray).contains("fromFileSearch")) {
+	    	
+	        list.add(csvData);
+	    }
+	    //データベースから検索
+	    if (Arrays.asList(chkBoxDataArray).contains("fromDataBaseSearch")) {
+	    	
+	        list.add(databaseData);
+	    }
+
+	    // 両方 or どちらか一方でも Composite にまとめる
+	    ILoadData loadData = new CompositeLoadData(list.toArray(ILoadData[]::new));
+	    return loadData.BookDataBeanGet();
 	}
 }

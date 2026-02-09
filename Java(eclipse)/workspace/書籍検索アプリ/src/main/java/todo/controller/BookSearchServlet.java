@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import todo.model.BookSearchManager;
 import todo.model.SearchInformationDataManager;
-import todo.model.beans.BookDataBean;
 
 /**
  * Servlet implementation class BookSearchScreen
@@ -24,7 +23,6 @@ public class BookSearchServlet extends HttpServlet {
 	private SearchInformationDataManager searchInfoManager;//検索情報
 	private static final String FILE_NAME = "bookDataList.csv";
 	private String FILE_PATH;
-	private boolean isFirstStart;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -34,52 +32,40 @@ public class BookSearchServlet extends HttpServlet {
         super();
         searchInfoManager = new SearchInformationDataManager();
         bookSearchManager = new BookSearchManager(searchInfoManager);
-        isFirstStart = true;
     }
+    
+    @Override
+    public void init() throws ServletException {
+        
+    	//CSVデータを読みこむ
+		FILE_PATH = this.getServletContext().getRealPath("/Resources/") + FILE_NAME;
+		bookSearchManager.loadBookDatas(FILE_PATH);
+    }
+    
+	private void requestDataSetting(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		searchInfoManager.parameterGetFromForm(request);
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTF-8");
+		requestDataSetting(request,response);
 		searchInfoManager.setSelectNoStr(request.getParameter("selectNo"));
-		if(isFirstStart) {
-			
-			//--------------------
-			//初期化
-			initializeParameter(request,response);
-			return;
-		}
 		if(!searchInfoManager.isSelectNoNull()) {
 			
 			//何らかの番号が選択されている
 			resultDisplay(request, response);
+			return;
 		}else {//if(searchInfoManager.isPushedButtonCopyEquals("Don'tOverWrite")){
 			
-			//リダイレクト後
+			//リダイレクト後にdoPostへ
 			doPost(request,response);
 		}
-	}
-	
-	public void initializeParameter(HttpServletRequest request, HttpServletResponse response) 
-		throws ServletException, IOException{
-		
-		//CSVデータを読みこむ
-		FILE_PATH = this.getServletContext().getRealPath("/Resources/") + FILE_NAME;
-		bookSearchManager.loadBookDatas(FILE_PATH);
-        //パラメータ初期化
-        parameterSet(request);
-        //フラグをおろす
-        isFirstStart = false;
-        //全件表示（初期表示）
-        allBookDataDisplay(request,response);
-	}
-	
-	private void parameterSet(HttpServletRequest request) {
-		
-		searchInfoManager.parameterSet(request);
 	}
 	
 	/**
@@ -87,35 +73,24 @@ public class BookSearchServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTF-8");
-		searchInfoManager.parameterGetFromForm(request);
+		requestDataSetting(request,response);
 		String pushedButton = searchInfoManager.getPushedButton();
-		if(isFirstStart) {
-			
-			//--------------------
-			//初期化
-			initializeParameter(request,response);
-			return;
-		}
 		switch(pushedButton) {
 		
 			//-----------------
 			//検索
 			case "検索":
-				String keyWord = searchInfoManager.getKeyWord();
-				searchBookData(keyWord,request,response);
+				//String keyWord = searchInfoManager.getKeyWord();
+				searchBookData(request,response);
 			break;
 			//-----------------
 			//全件表示
 			case "全件表示":
 				allBookDataDisplay(request,response);
 			break;
-			//-----------------
-			//検索エンジンで検索
-			case "検索エンジンで検索":
-				searchSearchEngine(request,response);
-			break;
+			default:
+				allBookDataDisplay(request,response);
+			break;		
 		}
 	}
 	
@@ -124,26 +99,16 @@ public class BookSearchServlet extends HttpServlet {
 	public void resultDisplay(HttpServletRequest request,HttpServletResponse response) 
 		throws ServletException, IOException{
 		
-		BookDataBean resultRecord = searchInfoManager.getResultRecord();
-		request.setAttribute("resultRecord",resultRecord);
-		request.setAttribute("selectNo",searchInfoManager.setSelectNoSetNullAndReturn());
+		bookSearchManager.searchResultDisplay(request);
 		transForward("./SearchResultServlet",request,response);
 	}
 	
 	//-----------
 	//検索
-	public void searchBookData(String keyWord,HttpServletRequest request,HttpServletResponse response)
+	public void searchBookData(HttpServletRequest request,HttpServletResponse response)
 		throws ServletException, IOException {
 		
-		bookSearchManager.searchBookData(keyWord,request);
-		//検索された本のタイトルをjspへ戻す
-		//request.setAttribute("keyWord",keyWord);
-		//選択されたラジオボタンをjspへ渡す
-		//request.setAttribute("pushedRadio",pushedRadio);
-		///検索結果をjspへ戻す
-		//request.setAttribute("searchResultList",searchResultList);
-		//パラメータをjspへ渡す
-		parameterSet(request);
+		bookSearchManager.searchBookData(request);
 		transForward("/WEB-INF/view/BookSearchScreen.jsp",request,response);
 	}
 	
@@ -153,18 +118,7 @@ public class BookSearchServlet extends HttpServlet {
 		throws ServletException, IOException {
 		
 		bookSearchManager.allBookDataDisplay(request);
-		//検索結果をjspへ戻す
-		//request.setAttribute("searchResultList",searchResultList);
-		//パラメータをjspへ渡す
-		parameterSet(request);
 		transForward("/WEB-INF/view/BookSearchScreen.jsp",request,response);
-	}
-	
-	//-----------
-	//検索エンジンで検索をかける
-	public void searchSearchEngine(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-		
-		//bookSearchManager.searchSearchEngine("Don'tOverWrite",request, response);
 	}
 	
 	private void transForward(String transPath,HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
