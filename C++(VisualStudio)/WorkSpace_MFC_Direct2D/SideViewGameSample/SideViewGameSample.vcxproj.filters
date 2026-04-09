@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\GameLogic">
+      <UniqueIdentifier>{d7d83511-0e78-48df-b6d7-a322d88da64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameLogic\Controller">
+      <UniqueIdentifier>{5c04da7c-147c-405c-b18c-7f83e32ce4d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameLogic\GameObject">
+      <UniqueIdentifier>{70a41f20-0433-4344-9b90-8c662c55c4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameLogic">
+      <UniqueIdentifier>{4c727aad-b55d-4658-8378-aaf8864d0423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameLogic\Controller">
+      <UniqueIdentifier>{a0f15725-ebad-4f0b-9b87-2da7557ddfe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameLogic\GameObject">
+      <UniqueIdentifier>{904a70dc-2a00-40aa-ae7f-44fbe42d3f5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SideViewGameSample.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SideViewGameSampleDoc.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SideViewGameSampleView.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="InputKey.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="LineObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>ヘッダー ファイル\GameLogic\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="RectObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionResult.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMapObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SideViewGameSample.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SideViewGameSampleDoc.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SideViewGameSampleView.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>ソース ファイル\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>ソース ファイル\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="LineObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>ソース ファイル\GameLogic\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="RectObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMap.cpp">
+      <Filter>ソース ファイル\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMapObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SideViewGameSample.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\file_view.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\file_view_hc.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\class_view.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\class_view_hc.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\fileview.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\fileview_hc.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\classview.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\classview_hc.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\explorer.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\explorer_hc.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\sort.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\sort_hc.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\menuimages.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\menuimages_hc.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\output_wnd.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\properties_wnd.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\properties.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\properties_hc.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\userimages.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\SideViewGameSampleDoc.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\SideViewGameSample.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SideViewGameSample.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+</Project>
