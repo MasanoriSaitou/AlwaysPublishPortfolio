@@ -12,40 +12,43 @@
   RectObject.cpp
   Renderer.cpp
   SideViewGameSample.cpp
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\PlayerController.cpp(20,21): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/PlayerController.cpp' をコンパイルしています)
+  
   SideViewGameSampleDoc.cpp
   SideViewGameSampleView.cpp
   TileMap.cpp
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMap.cpp(117,18): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMap.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMap.cpp(117,18): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMap.cpp' をコンパイルしています)
   
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMap.cpp(144,18): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMap.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMap.cpp(145,18): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMap.cpp' をコンパイルしています)
   
   TileMapObject.cpp
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMapObject.cpp(24,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMapObject.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMapObject.cpp(24,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMapObject.cpp' をコンパイルしています)
   
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMapObject.cpp(23,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMapObject.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMapObject.cpp(23,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMapObject.cpp' をコンパイルしています)
   
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMapObject.cpp(22,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMapObject.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMapObject.cpp(22,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMapObject.cpp' をコンパイルしています)
   
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMapObject.cpp(21,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMapObject.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMapObject.cpp(21,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMapObject.cpp' をコンパイルしています)
   
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMapObject.cpp(34,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMapObject.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMapObject.cpp(34,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMapObject.cpp' をコンパイルしています)
   
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMapObject.cpp(33,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMapObject.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMapObject.cpp(33,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMapObject.cpp' をコンパイルしています)
   
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMapObject.cpp(32,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMapObject.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMapObject.cpp(32,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMapObject.cpp' をコンパイルしています)
   
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\TileMapObject.cpp(31,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル '/TileMapObject.cpp' をコンパイルしています)
+C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\src\TileMapObject.cpp(31,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル '/src/TileMapObject.cpp' をコンパイルしています)
   
   ViewTree.cpp
   コードを生成中...
-  SideViewGameSample.vcxproj -> C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\SelfStudy\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\x64\Debug\SideViewGameSample.exe
+  SideViewGameSample.vcxproj -> C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\Java\AlwaysPublishPortfolio\C++(VisualStudio)\WorkSpace_MFC_Direct2D\SideViewGameSample\x64\Debug\SideViewGameSample.exe
