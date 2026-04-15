@@ -3,7 +3,7 @@
 //
 #define WM_APP_RENDER (WM_APP + 1)
 
-#include "GameMain.h"
+#include "include/GameMain.h"
 #include <thread>
 #pragma once
 

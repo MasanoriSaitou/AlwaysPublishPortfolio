@@ -126,15 +126,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CircleObject.cpp">
-      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
-    </ClCompile>
-    <ClCompile Include="src\GameMain.cpp">
-      <Filter>ソース ファイル\GameLogic</Filter>
-    </ClCompile>
-    <ClCompile Include="src\LineObject.cpp">
-      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
-    </ClCompile>
     <ClCompile Include="src\ClassView.cpp">
       <Filter>ソース ファイル\main</Filter>
     </ClCompile>
@@ -150,20 +141,8 @@
     <ClCompile Include="src\pch.cpp">
       <Filter>ソース ファイル\main</Filter>
     </ClCompile>
-    <ClCompile Include="src\PlayerController.cpp">
-      <Filter>ソース ファイル\GameLogic\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PlayerObject.cpp">
-      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
-    </ClCompile>
     <ClCompile Include="src\PropertiesWnd.cpp">
       <Filter>ソース ファイル\main</Filter>
-    </ClCompile>
-    <ClCompile Include="src\RectObject.cpp">
-      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Renderer.cpp">
-      <Filter>ソース ファイル\GameLogic</Filter>
     </ClCompile>
     <ClCompile Include="src\SideViewGameSample.cpp">
       <Filter>ソース ファイル\main</Filter>
@@ -174,40 +153,46 @@
     <ClCompile Include="src\SideViewGameSampleView.cpp">
       <Filter>ソース ファイル\main</Filter>
     </ClCompile>
-    <ClCompile Include="src\TileMap.cpp">
-      <Filter>ソース ファイル\GameLogic</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TileMapObject.cpp">
-      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
-    </ClCompile>
     <ClCompile Include="src\ViewTree.cpp">
       <Filter>ソース ファイル\main</Filter>
     </ClCompile>
+    <ClCompile Include="src\src\PlayerController.cpp">
+      <Filter>ソース ファイル\GameLogic\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\GameMain.cpp">
+      <Filter>ソース ファイル\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\Renderer.cpp">
+      <Filter>ソース ファイル\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\TileMap.cpp">
+      <Filter>ソース ファイル\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\CircleObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\LineObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\PlayerObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\RectObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\TileMapObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\CircleObject.h">
-      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
-    </ClInclude>
     <ClInclude Include="src\ClassView.h">
       <Filter>ヘッダー ファイル\main</Filter>
-    </ClInclude>
-    <ClInclude Include="src\CollisionResult.h">
-      <Filter>ヘッダー ファイル\GameLogic</Filter>
     </ClInclude>
     <ClInclude Include="src\framework.h">
       <Filter>ヘッダー ファイル\main</Filter>
     </ClInclude>
     <ClInclude Include="src\FileView.h">
       <Filter>ヘッダー ファイル\main</Filter>
-    </ClInclude>
-    <ClInclude Include="src\GameMain.h">
-      <Filter>ヘッダー ファイル\GameLogic</Filter>
-    </ClInclude>
-    <ClInclude Include="src\InputKey.h">
-      <Filter>ヘッダー ファイル\GameLogic</Filter>
-    </ClInclude>
-    <ClInclude Include="src\LineObject.h">
-      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="src\MainFrm.h">
       <Filter>ヘッダー ファイル\main</Filter>
@@ -218,20 +203,8 @@
     <ClInclude Include="src\pch.h">
       <Filter>ヘッダー ファイル\main</Filter>
     </ClInclude>
-    <ClInclude Include="src\PlayerController.h">
-      <Filter>ヘッダー ファイル\GameLogic\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="src\PlayerObject.h">
-      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
-    </ClInclude>
     <ClInclude Include="src\PropertiesWnd.h">
       <Filter>ヘッダー ファイル\main</Filter>
-    </ClInclude>
-    <ClInclude Include="src\RectObject.h">
-      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Renderer.h">
-      <Filter>ヘッダー ファイル\GameLogic</Filter>
     </ClInclude>
     <ClInclude Include="src\Resource.h">
       <Filter>ヘッダー ファイル\main</Filter>
@@ -248,14 +221,41 @@
     <ClInclude Include="src\targetver.h">
       <Filter>ヘッダー ファイル\main</Filter>
     </ClInclude>
-    <ClInclude Include="src\TileMap.h">
-      <Filter>ヘッダー ファイル\GameLogic</Filter>
-    </ClInclude>
-    <ClInclude Include="src\TileMapObject.h">
-      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
-    </ClInclude>
     <ClInclude Include="src\ViewTree.h">
       <Filter>ヘッダー ファイル\main</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\PlayerController.h">
+      <Filter>ヘッダー ファイル\GameLogic\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\CollisionResult.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\GameMain.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\InputKey.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Renderer.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\TileMap.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\CircleObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\LineObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\PlayerObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\RectObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\TileMapObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

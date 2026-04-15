@@ -218,53 +218,53 @@
     <None Include="res\SideViewGameSample.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CircleObject.cpp" />
     <ClCompile Include="src\ClassView.cpp" />
     <ClCompile Include="src\FileView.cpp" />
-    <ClCompile Include="src\GameMain.cpp" />
-    <ClCompile Include="src\LineObject.cpp" />
     <ClCompile Include="src\MainFrm.cpp" />
     <ClCompile Include="src\OutputWnd.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\PlayerController.cpp" />
-    <ClCompile Include="src\PlayerObject.cpp" />
     <ClCompile Include="src\PropertiesWnd.cpp" />
-    <ClCompile Include="src\RectObject.cpp" />
-    <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\SideViewGameSample.cpp" />
     <ClCompile Include="src\SideViewGameSampleDoc.cpp" />
     <ClCompile Include="src\SideViewGameSampleView.cpp" />
-    <ClCompile Include="src\TileMap.cpp" />
-    <ClCompile Include="src\TileMapObject.cpp" />
+    <ClCompile Include="src\src\CircleObject.cpp" />
+    <ClCompile Include="src\src\GameMain.cpp" />
+    <ClCompile Include="src\src\LineObject.cpp" />
+    <ClCompile Include="src\src\PlayerController.cpp" />
+    <ClCompile Include="src\src\PlayerObject.cpp" />
+    <ClCompile Include="src\src\RectObject.cpp" />
+    <ClCompile Include="src\src\Renderer.cpp" />
+    <ClCompile Include="src\src\TileMap.cpp" />
+    <ClCompile Include="src\src\TileMapObject.cpp" />
     <ClCompile Include="src\ViewTree.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\CircleObject.h" />
     <ClInclude Include="src\ClassView.h" />
-    <ClInclude Include="src\CollisionResult.h" />
     <ClInclude Include="src\FileView.h" />
     <ClInclude Include="src\framework.h" />
-    <ClInclude Include="src\GameMain.h" />
-    <ClInclude Include="src\InputKey.h" />
-    <ClInclude Include="src\LineObject.h" />
+    <ClInclude Include="src\include\CircleObject.h" />
+    <ClInclude Include="src\include\CollisionResult.h" />
+    <ClInclude Include="src\include\GameMain.h" />
+    <ClInclude Include="src\include\InputKey.h" />
+    <ClInclude Include="src\include\LineObject.h" />
+    <ClInclude Include="src\include\PlayerController.h" />
+    <ClInclude Include="src\include\PlayerObject.h" />
+    <ClInclude Include="src\include\RectObject.h" />
+    <ClInclude Include="src\include\Renderer.h" />
+    <ClInclude Include="src\include\TileMap.h" />
+    <ClInclude Include="src\include\TileMapObject.h" />
     <ClInclude Include="src\MainFrm.h" />
     <ClInclude Include="src\OutputWnd.h" />
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\PlayerController.h" />
-    <ClInclude Include="src\PlayerObject.h" />
     <ClInclude Include="src\PropertiesWnd.h" />
-    <ClInclude Include="src\RectObject.h" />
-    <ClInclude Include="src\Renderer.h" />
     <ClInclude Include="src\Resource.h" />
     <ClInclude Include="src\SideViewGameSample.h" />
     <ClInclude Include="src\SideViewGameSampleDoc.h" />
     <ClInclude Include="src\SideViewGameSampleView.h" />
     <ClInclude Include="src\targetver.h" />
-    <ClInclude Include="src\TileMap.h" />
-    <ClInclude Include="src\TileMapObject.h" />
     <ClInclude Include="src\ViewTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
