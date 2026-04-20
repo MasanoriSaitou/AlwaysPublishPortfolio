@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\c#(visualstudio)\\workspace_asp.netcoremvc\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\models\\csvdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|solutionrelative:models\\csvdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\c#(visualstudio)\\workspace_asp.netcoremvc\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\models\\bookdatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|solutionrelative:models\\bookdatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\c#(visualstudio)\\workspace_asp.netcoremvc\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\models\\booksearchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|solutionrelative:models\\booksearchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\c#(visualstudio)\\workspace_asp.netcoremvc\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\models\\csvreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|solutionrelative:models\\csvreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\c#(visualstudio)\\workspace_asp.netcoremvc\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\controllers\\booksearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|solutionrelative:controllers\\booksearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\c#(visualstudio)\\workspace_asp.netcoremvc\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B275A6F7-5AB7-4761-8341-44B70F851243}|\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA_\u79FB\u690D\u5143Java.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CSVReader.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Models\\CSVReader.cs",
+              "RelativeDocumentMoniker": "Models\\CSVReader.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Models\\CSVReader.cs",
+              "RelativeToolTip": "Models\\CSVReader.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T17:39:00.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CsvData.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Models\\CsvData.cs",
+              "RelativeDocumentMoniker": "Models\\CsvData.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Models\\CsvData.cs",
+              "RelativeToolTip": "Models\\CsvData.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T17:38:26.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookDataManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Models\\BookDataManager.cs",
+              "RelativeDocumentMoniker": "Models\\BookDataManager.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Models\\BookDataManager.cs",
+              "RelativeToolTip": "Models\\BookDataManager.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T17:38:10.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookSearchManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Models\\BookSearchManager.cs",
+              "RelativeDocumentMoniker": "Models\\BookSearchManager.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Models\\BookSearchManager.cs",
+              "RelativeToolTip": "Models\\BookSearchManager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T17:37:48.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookSearchController.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Controllers\\BookSearchController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookSearchController.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Controllers\\BookSearchController.cs",
+              "RelativeToolTip": "Controllers\\BookSearchController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T17:37:13.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\C#(VisualStudio)\\WorkSpace_ASP.NETCoreMVC\\\u66F8\u7C4D\u691C\u7D22\u30A2\u30D7\u30EA\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T17:37:11.744Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

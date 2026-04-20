@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = 書籍検索アプリ(移植元_
+build_property.RootNamespace = 書籍検索アプリ(移植元_
+build_property.ProjectDir = C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\C#(VisualStudio)\WorkSpace_ASP.NETCoreMVC\書籍検索アプリ\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\C#(VisualStudio)\WorkSpace_ASP.NETCoreMVC\書籍検索アプリ
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/BookSearch/BookSearchScreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1NlYXJjaFxCb29rU2VhcmNoU2NyZWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/Home/SearchResultScreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2hSZXN1bHRTY3JlZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/Home/Start.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/俺/Desktop/デスクトップ/制作系/プログラム関係/格闘ゲームプロジェクト/自己研鑽の積み重ね/SelfStudy/C\#(VisualStudio)/WorkSpace_ASP.NETCoreMVC/書籍検索アプリ/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-n0zbbcs4fg
