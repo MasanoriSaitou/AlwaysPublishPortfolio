@@ -1,0 +1,42 @@
+﻿@using 書籍検索アプリ_移植元Java.Models.beans
+@model BookDataBean
+@{
+    ViewData["Title"] = "SearchResultScreen";
+}
+
+<h2>
+	検索結果画面
+</h2>
+<link rel="stylesheet" href="~/css/searchResult.css" />
+<p class="fictitiousISBN">
+    架空ISBNコード：@Model.FictitiousISBN
+</p>
+
+<p class="bookName">
+    本のタイトル：@Model.BookName
+</p>
+
+<p class="author">
+    著者：@Model.Author
+</p>
+
+<p class="publicationDate">
+    発刊日：@Model.PublicationDate?.ToString("yyyy/MM/dd")
+</p>
+
+<p class="issuer">
+    発行者：@Model.Issuer
+</p>
+
+<p class="publisher">
+    発行所：@Model.Publisher
+</p>
+
+<p class="printingShop">
+    印刷所：@Model.PrintingShop
+</p>
+
+<form method="get" asp-controller="BookSearch" asp-action="BookSearchScreen">
+
+    <input type="submit" value="検索画面に戻る" id="button">
+</form>

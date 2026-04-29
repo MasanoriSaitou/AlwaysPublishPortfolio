@@ -1,0 +1,16 @@
+﻿table, th, td {
+    border: 3px solid black; /* ← 罫線を1本に統一 */
+}
+
+td {
+    padding-right: 3ch; /* 日本語3文字分の余白を右側に追加 */
+}
+
+th {
+    text-align: center; /* 中央揃え */
+    vertical-align: middle; /* 上下も中央に */
+}
+
+#result {
+    margin-top: 20px; /* 好きな値に調整できる */
+}
