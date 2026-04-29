@@ -1,5 +1,5 @@
 # AlwaysPublishPortfolio
-常時公開のポートフォリオになります。\n
+常時公開のポートフォリオになります。
 以下ポートフォリオの詳細を記載いたします。
 
 ＜2_C++(VisualStudio)＞
