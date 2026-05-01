@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="じゃんけんゲーム_移植元Java.View.HpView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="HpLabel"
+            FontSize="24"
+            FontFamily="Segoe UI Emoji"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            TextWrapping="NoWrap" Grid.RowSpan="2"/>
+    </Grid>
+</UserControl>

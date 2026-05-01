@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\2_workspace_wpf\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143java\\view\\gameui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|solutionrelative:view\\gameui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\2_workspace_wpf\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143java\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\2_workspace_wpf\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143java\\view\\messageboxview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|solutionrelative:view\\messageboxview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\2_workspace_wpf\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143java\\view\\hpview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|solutionrelative:view\\hpview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\2_workspace_wpf\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143java\\view\\gameui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|solutionrelative:view\\gameui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\2_workspace_wpf\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143java\\model\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|solutionrelative:model\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\2_workspace_wpf\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143java\\view\\hpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|solutionrelative:view\\hpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\2_workspace_wpf\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143java\\view\\messageboxview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6576F4A9-F909-4817-A108-AD31E6FC4381}|\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java.csproj|solutionrelative:view\\messageboxview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T01:29:46.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameUI.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\GameUI.xaml.cs",
+              "RelativeDocumentMoniker": "View\\GameUI.xaml.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\GameUI.xaml.cs",
+              "RelativeToolTip": "View\\GameUI.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T01:29:30.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameUI.xaml",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\GameUI.xaml",
+              "RelativeDocumentMoniker": "View\\GameUI.xaml",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\GameUI.xaml",
+              "RelativeToolTip": "View\\GameUI.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-01T01:27:14.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameLogic.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\Model\\GameLogic.cs",
+              "RelativeDocumentMoniker": "Model\\GameLogic.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\Model\\GameLogic.cs",
+              "RelativeToolTip": "Model\\GameLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T00:35:19.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MessageBoxView.xaml",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\MessageBoxView.xaml",
+              "RelativeDocumentMoniker": "View\\MessageBoxView.xaml",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\MessageBoxView.xaml",
+              "RelativeToolTip": "View\\MessageBoxView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-01T00:21:01.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MessageBoxView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\MessageBoxView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MessageBoxView.xaml.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\MessageBoxView.xaml.cs",
+              "RelativeToolTip": "View\\MessageBoxView.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T00:15:39.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HpView.xaml",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\HpView.xaml",
+              "RelativeDocumentMoniker": "View\\HpView.xaml",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\HpView.xaml",
+              "RelativeToolTip": "View\\HpView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T15:09:41.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HpView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\HpView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\HpView.xaml.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\2_workspace_WPF\\\u3058\u3083\u3093\u3051\u3093\u30B2\u30FC\u30E0_\u79FB\u690D\u5143Java\\View\\HpView.xaml.cs",
+              "RelativeToolTip": "View\\HpView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T15:10:53.205Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

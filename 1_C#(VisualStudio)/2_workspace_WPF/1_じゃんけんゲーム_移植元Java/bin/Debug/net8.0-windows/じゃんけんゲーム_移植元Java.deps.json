@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "じゃんけんゲーム_移植元Java/1.0.0": {
+        "runtime": {
+          "じゃんけんゲーム_移植元Java.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "じゃんけんゲーム_移植元Java/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

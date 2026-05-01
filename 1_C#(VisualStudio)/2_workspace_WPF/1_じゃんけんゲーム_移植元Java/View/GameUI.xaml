@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="じゃんけんゲーム_移植元Java.View.GameUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:じゃんけんゲーム_移植元Java.View">
+
+    <Grid>
+
+        <!-- レイアウト全体（これだけでOK） -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- 左：プレイヤーHP -->
+            <local:HpView x:Name="PlayerHpView"
+                          Grid.Column="0"
+                          Foreground="DeepPink"
+                          Margin="20"/>
+
+            <!-- 中央：メッセージ + ボタン -->
+            <StackPanel Grid.Column="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                
+                <!-- メッセージボックス -->
+                <local:MessageBoxView x:Name="MessageView" />
+ 
+                <!-- ボタン重ねる領域 -->
+                <Grid>
+
+                    <!-- じゃんけんボタン -->
+                    <StackPanel x:Name="JankenButtons"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+
+                        <Button Content="グー"
+                                Click="OnClickRock"
+                                Margin="10,0" Width="70" Height="40"/>
+
+                        <Button Content="チョキ"
+                                Click="OnClickScissors"
+                                Margin="10,0" Width="70" Height="40"/>
+
+                        <Button Content="パー"
+                                Click="OnClickPaper"
+                                Margin="10,0" Width="70" Height="40"/>
+
+                    </StackPanel>
+
+                    <!-- リトライボタン -->
+                    <Button x:Name="RetryButton"
+                            Content="もう一度挑戦"
+                            Visibility="Collapsed"
+                            Click="OnClickRetry"
+                            HorizontalAlignment="Center"
+                            Width="100" Height="40"/>
+                </Grid>
+            </StackPanel>
+
+            <!-- 右：CPU HP -->
+            <local:HpView x:Name="CpuHpView"
+                          Grid.Column="2"
+                          Foreground="Purple"
+                          Margin="20"/>
+        </Grid>
+
+        <!-- ダメージオーバーレイ -->
+        <Border x:Name="DamageOverlay"
+                Background="#88FF0000"
+                Visibility="Collapsed"
+                Opacity="0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"/>
+    </Grid>
+</UserControl>
