@@ -2,10 +2,16 @@
 #include "include/PlayerController.h"
 
 PlayerController::PlayerController(PlayerObject& p,InputKey& i)
-: player(p),inputKey(i),moveX(0),moveY(0),direX(0),direY(0),delta(0){
+	: player(p),
+	inputKey(i),
+	moveX(0),
+	moveY(0),
+	direX(0),
+	direY(0),
+	delta(0){
 }
 
-void PlayerController::Update(double delta, TileMap& map) {
+void PlayerController::Update(double delta, StageMap& map) {
 
 	//前フレームからの経過秒の取得
 	this->delta = delta;
@@ -19,19 +25,29 @@ void PlayerController::Update(double delta, TileMap& map) {
 
 	
 	// --- ジャンプ処理 ---
-	bool pressedW = inputKey.isUp && inputKey.pressedUp;
+	bool pressedW = inputKey.pressedUpOrDown;
 	if (pressedW && isGrounded) {
 
 		velocityY = -1100.0f;   // ジャンプ力（調整可能）
 		isGrounded = false; //空中へ
 	}
 
-	//世界の重力を受け続ける
-	if (!isGrounded /*&& direY == 0*/) {
+	//世界の重力を常に受け続ける
+	//if (!isGrounded /*&& direY == 0*/) {
 
 		velocityY += map.gravity;
-	}
+		fallTime += this->delta;
+		OutputDebugString(L"空中にいるよ\n");
+	//}
 
+	// 着地したら落下速度をリセット
+	if (isGrounded) {
+
+		velocityY = 0.0f;
+		fallTime = 0.0f;
+		OutputDebugString(L"着地したよ!\n");
+	}
+	
 	// 落下量（速度 × delta）
 	//float fall = velocityY * delta;
 
@@ -45,7 +61,7 @@ void PlayerController::Update(double delta, TileMap& map) {
 	//m_player.x2 += 2.0f;
 }
 
-void PlayerController::ApplyMovement(TileMap& map) {
+void PlayerController::ApplyMovement(StageMap& map) {
 
 	//死亡判定
 	if (-1 != map.CheckCollisionY(player.x, player.y, player.width, player.hight, moveY, 9).ty) {
@@ -60,11 +76,4 @@ void PlayerController::ApplyMovement(TileMap& map) {
 	
 	//左端判定
 	player.x = map.LimitPosLeftX(player.x, player.width);
-
-	// 着地したら落下速度をリセット
-	if (isGrounded) {
-
-		velocityY = 0.0f;
-		moveY = 0.0f;
-	}
 }

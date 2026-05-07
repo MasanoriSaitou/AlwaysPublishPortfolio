@@ -1,10 +1,10 @@
 #include "RectObject.h"
-#include "CircleObject.h"
-#include "LineObject.h"
-#include "PlayerObject.h"
-#include "TileMap.h"
+#include "include/CircleObject.h"
+#include "include/LineObject.h"
+#include "include/PlayerObject.h"
+#include "include/StageMapObject.h"
 #include "include/PlayerController.h"
-#include "InputKey.h"
+#include "include/InputKey.h"
 #pragma once
 
 class GameMain{
@@ -15,9 +15,8 @@ class GameMain{
 	PlayerController pController;
 	CircleObject m_ball;
 	LineObject m_line;
-	TileMap stageMap;
-	TileMapObject tileMap;
-	
+	StageMap stageMap;
+	StageMapObject stageMapObject;
 	InputKey inputKey;
 
 public:

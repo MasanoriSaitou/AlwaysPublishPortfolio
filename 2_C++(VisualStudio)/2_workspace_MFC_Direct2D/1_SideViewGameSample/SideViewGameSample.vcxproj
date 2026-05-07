@@ -230,13 +230,17 @@
     <ClCompile Include="src\SideViewGameSample.cpp" />
     <ClCompile Include="src\SideViewGameSampleDoc.cpp" />
     <ClCompile Include="src\SideViewGameSampleView.cpp" />
+    <ClCompile Include="src\src\BlockObject.cpp" />
     <ClCompile Include="src\src\CircleObject.cpp" />
     <ClCompile Include="src\src\GameMain.cpp" />
     <ClCompile Include="src\src\LineObject.cpp" />
     <ClCompile Include="src\src\PlayerController.cpp" />
     <ClCompile Include="src\src\PlayerObject.cpp" />
+    <ClCompile Include="src\src\PowerUpBlock1Object.cpp" />
     <ClCompile Include="src\src\RectObject.cpp" />
     <ClCompile Include="src\src\Renderer.cpp" />
+    <ClCompile Include="src\src\StageMap.cpp" />
+    <ClCompile Include="src\src\StageMapObject.cpp" />
     <ClCompile Include="src\src\TileMap.cpp" />
     <ClCompile Include="src\src\TileMapObject.cpp" />
     <ClCompile Include="src\ViewTree.cpp" />
@@ -245,6 +249,7 @@
     <ClInclude Include="src\ClassView.h" />
     <ClInclude Include="src\FileView.h" />
     <ClInclude Include="src\framework.h" />
+    <ClInclude Include="src\include\BlockObject.h" />
     <ClInclude Include="src\include\CircleObject.h" />
     <ClInclude Include="src\include\CollisionResult.h" />
     <ClInclude Include="src\include\GameMain.h" />
@@ -252,8 +257,11 @@
     <ClInclude Include="src\include\LineObject.h" />
     <ClInclude Include="src\include\PlayerController.h" />
     <ClInclude Include="src\include\PlayerObject.h" />
+    <ClInclude Include="src\include\PowerUpBlock1Object.h" />
     <ClInclude Include="src\include\RectObject.h" />
     <ClInclude Include="src\include\Renderer.h" />
+    <ClInclude Include="src\include\StageMap.h" />
+    <ClInclude Include="src\include\StageMapObject.h" />
     <ClInclude Include="src\include\TileMap.h" />
     <ClInclude Include="src\include\TileMapObject.h" />
     <ClInclude Include="src\MainFrm.h" />

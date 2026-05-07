@@ -3,7 +3,7 @@
 
 
 TileMap::TileMap(TileMapObject& t)
-:tileMapObject(t),TILE_SIZE(t.TILE_SIZE), MAP_W(t.MAP_W), MAP_H(t.MAP_H){
+:tileMapObject(t),TILE_SIZE(t.TILE_SIZE), MAP_W(), MAP_H(){
 }
 
 CollisionResult TileMap::CheckCollisionRect(float x, float y, float w, float h, int tileKind)
@@ -21,9 +21,9 @@ CollisionResult TileMap::CheckCollisionRect(float x, float y, float w, float h, 
     for (int ty = tileTop; ty <= tileBottom; ty++) {
         for (int tx = tileLeft; tx <= tileRight; tx++) {
 
-            if (tileMapObject.IsSolidTile(tx, ty, tileKind)) {
+            //if (tileMapObject.IsSolidTile(tx, ty, tileKind)) {
                 return { tx, ty }; // 衝突したタイルの座標
-            }
+            //}
         }
     }
 
@@ -43,9 +43,9 @@ CollisionResult TileMap::CheckCollisionX(float x, float y, float w, float h, flo
         int tileBottom = (int)((y + h -1) / TILE_SIZE);
 
         for (int ty = tileTop; ty <= tileBottom; ty++) {
-            if (tileMapObject.IsSolidTile(tileX, ty, tileKind)) {
+            //if (tileMapObject.IsSolidTile(tileX, ty, tileKind)) {
                 return { tileX, ty };
-            }
+            //}
         }
     }
     else if (moveX < 0) {
@@ -57,9 +57,9 @@ CollisionResult TileMap::CheckCollisionX(float x, float y, float w, float h, flo
         int tileBottom = (int)((y + h -1) / TILE_SIZE);
 
         for (int ty = tileTop; ty <= tileBottom; ty++) {
-            if (tileMapObject.IsSolidTile(tileX, ty,tileKind)) {
+           // if (tileMapObject.IsSolidTile(tileX, ty,tileKind)) {
                 return { tileX, ty };
-            }
+           // }
         }
     }
 
@@ -70,17 +70,20 @@ CollisionResult TileMap::CheckCollisionY(float x, float y, float w, float h, flo
 {
     float newY = y + moveY;
 
-    if (moveY > 0) {
+    if (moveY >= 0) {
         // 落下中 → 足のラインだけチェック
-        float bottom = newY + h;// -1;
-        int tileY = (int)(bottom / TILE_SIZE) >= MAP_H? MAP_H:(int)(bottom / TILE_SIZE);
+        float bottom = newY + h+1;
+        int tileEndY = (int)(bottom / TILE_SIZE) >= MAP_H? MAP_H:(int)(bottom / TILE_SIZE);
+        int tileStartY = (int)(y / TILE_SIZE) >= MAP_H ? MAP_H : (int)(y / TILE_SIZE);
 
         int tileLeft = (int)(x / TILE_SIZE);
         int tileRight = (int)((x + w -1) / TILE_SIZE);
 
-        for (int tx = tileLeft; tx <= tileRight; tx++) {
-            if (tileMapObject.IsSolidTile(tx, tileY, tileKind)) {
-                return { tx, tileY };
+        for (int ty = tileStartY; ty <= tileEndY; ty++) {
+            for (int tx = tileLeft; tx <= tileRight; tx++) {
+               // if (tileMapObject.IsSolidTile(tx, ty, tileKind)) {
+                    return { tx, ty };
+               // }
             }
         }
     }
@@ -93,9 +96,9 @@ CollisionResult TileMap::CheckCollisionY(float x, float y, float w, float h, flo
         int tileRight = (int)((x + w -1) / TILE_SIZE);
 
         for (int tx = tileLeft; tx <= tileRight; tx++) {
-            if (tileMapObject.IsSolidTile(tx, tileY, tileKind)) {
+           // if (tileMapObject.IsSolidTile(tx, tileY, tileKind)) {
                 return { tx, tileY };
-            }
+           // }
         }
     }
 
@@ -130,32 +133,8 @@ float TileMap::ResolveCollisionX(float x, float y, float w, float h, float moveX
 }
 
 float TileMap::ResolveCollisionY(float x, float y, float w, float h, float moveY,bool& isGround)
-{
-    float newY = y + moveY;
-    isGround = false;
-
-    // newY の位置で衝突しているか？
-    CollisionResult col = CheckCollisionY(x,y,w,h,moveY,1);
-
-    if (col.ty == -1) {
-        return newY; // 衝突なし
-    }
-
-    // 衝突したタイルの矩形
-    float tileY1 = col.ty * TILE_SIZE;
-    float tileY2 = tileY1 + TILE_SIZE;
-
-    if (moveY > 0) {
-        // 下に移動 → 足がタイルにめり込む
-        newY = tileY1 - h;
-        isGround = true;
-    }
-    else if (moveY < 0) {
-        // 上に移動 → 頭がタイルにめり込む
-        newY = tileY2;
-    }
-
-    return newY;
+{   
+    return 0.0f;
 }
 
 float TileMap::LimitPosLeftX(float x,float width) {

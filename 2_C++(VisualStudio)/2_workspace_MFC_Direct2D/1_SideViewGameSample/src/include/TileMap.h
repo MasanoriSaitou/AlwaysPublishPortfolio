@@ -8,7 +8,7 @@ class TileMap
     const int MAP_W;
     const int MAP_H;
     TileMapObject& tileMapObject;
-    float gravity_ =  50.0f;// +40.0f; //重力
+    float gravity_ = 9.80665f * 5.00f;//地球の重力に乗算 +40.0f; //重力
 
     //structを使って代入演算子をオーバーロードする方法で、プロパティを実現する
     struct GravityProperty {

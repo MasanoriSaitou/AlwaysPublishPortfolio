@@ -183,6 +183,18 @@
     <ClCompile Include="src\src\TileMapObject.cpp">
       <Filter>ソース ファイル\GameLogic\GameObject</Filter>
     </ClCompile>
+    <ClCompile Include="src\src\StageMap.cpp">
+      <Filter>ソース ファイル\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\StageMapObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\BlockObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\PowerUpBlock1Object.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ClassView.h">
@@ -255,6 +267,18 @@
       <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="src\include\TileMapObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\StageMap.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\StageMapObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\BlockObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\PowerUpBlock1Object.h">
       <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
     </ClInclude>
   </ItemGroup>

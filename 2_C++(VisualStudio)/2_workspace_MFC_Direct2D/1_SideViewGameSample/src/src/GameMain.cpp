@@ -8,7 +8,8 @@ GameMain::GameMain()
 	, m_line(10, 10, 100, 10, 5.0f, D2D1::ColorF(D2D1::ColorF::Green))
 	, player(60, 400, 40, 122, D2D1::ColorF(D2D1::ColorF::Blue))
 	, pController(player, inputKey)
-	, stageMap(tileMap)
+	, stageMapObject()
+	, stageMap(stageMapObject)
 {
 }
 
@@ -29,7 +30,7 @@ void GameMain::Update(double delta) {
 
 void GameMain::Draw(Renderer& renderer) {
 
-	tileMap.Draw(renderer);
+	stageMapObject.Draw(renderer);
 	m_player.Draw(renderer);
 	m_player2.Draw(renderer);
 	m_ball.Draw(renderer);
