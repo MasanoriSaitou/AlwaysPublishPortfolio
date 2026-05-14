@@ -31,7 +31,11 @@ void Renderer::Init(HWND hWnd)
         RECT rc;
         GetClientRect(hWnd, &rc);
 
-        D2D1_SIZE_U size = D2D1::SizeU(rc.right - rc.left, rc.bottom - rc.top);
+        //‰æ–ÊƒTƒCƒY‚ÌŽæ“¾
+        m_screenWidth = rc.right - rc.left;
+        m_screenHeight = rc.bottom - rc.top;
+
+        D2D1_SIZE_U size = D2D1::SizeU(m_screenWidth, m_screenHeight);
 
         HRESULT hr = m_pFactory->CreateHwndRenderTarget(
             D2D1::RenderTargetProperties(),
@@ -143,3 +147,6 @@ void Renderer::DrawRectOutline(float x1, float y1, float x2, float y2, float str
 
     brush->Release();
 }
+
+int Renderer::GetScreenWidth() const { return m_screenWidth; }
+int Renderer::GetScreenHeight() const { return m_screenHeight; }

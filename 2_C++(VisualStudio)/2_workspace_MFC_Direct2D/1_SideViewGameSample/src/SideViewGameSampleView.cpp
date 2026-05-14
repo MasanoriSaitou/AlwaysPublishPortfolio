@@ -47,7 +47,8 @@ CSideViewGameSampleView::CSideViewGameSampleView() noexcept
 	: m_running(false)
 	, m_freq()
 	, m_prev()
-	, gameMain()
+	, m_Renderer()
+	, gameMain(m_Renderer)
 {
 	// TODO: 構築コードをここに追加します。
 
@@ -93,7 +94,7 @@ void CSideViewGameSampleView::OnDraw(CDC* /*pDC*/)
 	m_Renderer.Clear(0.8f, 0.9f, 1.0f);
 
 	//ゲームメイン
-	gameMain.Draw(m_Renderer);
+	gameMain.Draw();
 	m_Renderer.End();
 }
 

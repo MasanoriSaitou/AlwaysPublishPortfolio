@@ -8,6 +8,29 @@ StageMap::StageMap(StageMapObject& s)
     , MAP_H(s.MAP_H) {
 }
 
+vector<TileType> StageMap::GetTilesInRect(float x, float y, float w, float h) const
+{
+    vector<TileType> result;
+
+    int left = x / TILE_SIZE;
+    int right = (x + w - 1) / TILE_SIZE;
+    int top = y / TILE_SIZE;
+    int bottom = (y + h - 1) / TILE_SIZE;
+    // 範囲チェック
+    left = max(0, left);
+    right = min(MAP_W - 1, right);
+    top = max(0, top);
+    bottom = min(MAP_H - 1, bottom);
+
+    for (int ty = top; ty <= bottom; ty++) {
+        for (int tx = left; tx <= right; tx++) {
+            //int tile = stageMapObject.GetTile(tx, ty);
+            result.push_back(stageMapObject.OnHit(tx,ty));
+        }
+    }
+    return result;
+}
+
 CollisionResult StageMap::CheckCollisionRect(float x, float y, float w, float h, int tileKind)
 {
     float left = x;

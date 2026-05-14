@@ -8,5 +8,5 @@ public:
     D2D1::ColorF color;
 
     RectObject(float _x1, float _y1, float _x2, float _y2, D2D1::ColorF _color);
-    void Draw(Renderer& renderer);
+    void Draw(Renderer& renderer) const;
 };

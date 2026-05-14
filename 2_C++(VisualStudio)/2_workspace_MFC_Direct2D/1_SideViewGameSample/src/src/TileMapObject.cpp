@@ -1,5 +1,13 @@
 #include "pch.h"
 #include "include/TileMapObject.h"
 
-void TileMapObject::Draw(Renderer& renderer,int x,int y){
+TileType TileMapObject::GetTileType(){
+
+	return TileType::Empty;
+}
+
+void TileMapObject::Draw(Renderer& renderer,int x,int y,float cameraX){
+}
+
+void TileMapObject::OnHit() {
 }

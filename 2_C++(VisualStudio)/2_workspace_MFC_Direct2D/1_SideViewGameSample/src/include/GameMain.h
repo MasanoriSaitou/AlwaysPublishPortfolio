@@ -5,10 +5,12 @@
 #include "include/StageMapObject.h"
 #include "include/PlayerController.h"
 #include "include/InputKey.h"
+#include "include/Camera.h"
 #pragma once
 
 class GameMain{
 
+	Renderer& renderer;
 	RectObject m_player;
 	RectObject m_player2;
 	PlayerObject player;
@@ -18,13 +20,14 @@ class GameMain{
 	StageMap stageMap;
 	StageMapObject stageMapObject;
 	InputKey inputKey;
+	Camera camera;
 
 public:
 
-	GameMain();
+	GameMain(Renderer& renderer);
 	void Initialize();
 	void Update(double delta);
-	void Draw(Renderer& renderer);
+	void Draw();
 
 	//ƒL[“ü—Í
 	void OnKeyDownA() { inputKey.isLeft = true; }

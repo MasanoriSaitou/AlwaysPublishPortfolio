@@ -2,6 +2,7 @@
 #include "include/StageMapObject.h"
 #include "include/BlockObject.h"
 #include "include/PowerUpBlock1Object.h"
+#include "include/KillBlockObject.h"
 #include "algorithm"
 using namespace std;
 
@@ -19,6 +20,13 @@ StageMapObject::StageMapObject() {
         vector<unique_ptr<TileMapObject>> v;
         for (int x = 0; x < MAP_W; x++) {
 
+            //一番下のブロック(map)は死亡タイルにする
+            if (y >= MAP_H - 1) {
+
+                map[y][x] = 9;
+            }
+
+            //タイルマップデータ作成
             switch (map[y][x]) {
 
                 //1:ブロック
@@ -29,6 +37,11 @@ StageMapObject::StageMapObject() {
                 //2:パワーアップブロック1
                 case 2: {
                     v.push_back(make_unique<PowerUpBlock1Object>());
+                    break;
+                }
+                //9:死亡タイル　⇒見かけ上1のブロックを配置
+                case 9: {
+                    v.push_back(make_unique<KillBlockObject>());
                     break;
                 }
                 //0:空気 ⇒親クラスをそのまま入れる
@@ -42,6 +55,12 @@ StageMapObject::StageMapObject() {
     }
 }
 
+TileType StageMapObject::OnHit(int x, int y) {
+
+    tileMapObjectArrays[y][x]->OnHit();
+    return tileMapObjectArrays[y][x]->GetTileType();
+}
+
 bool StageMapObject::IsSolidTile(int tileX, int tileY, int tileKind) const {
 
     if (tileX < 0 || tileX >= MAP_W) return false;
@@ -50,17 +69,25 @@ bool StageMapObject::IsSolidTile(int tileX, int tileY, int tileKind) const {
     return map[tileY][tileX] == tileKind;
 }
 
-void StageMapObject::Draw(Renderer& renderer) const {
+void StageMapObject::Draw(Renderer& renderer,float cameraX,float screenWidth) const {
 
+    //ワールドの読み込み範囲を決める
+    int startX = cameraX / TILE_SIZE;
+    int endX = (cameraX + screenWidth) / TILE_SIZE;
+    if (startX < 0) startX = 0;
+    if (startX >= MAP_W) startX = MAP_W-1;
+    if (endX < 0) endX = 0;
+    if (endX >= MAP_W)endX = MAP_W;
     /*for (int y = 0; y < MAP_H; y++) {
         for (int x = 0; x < MAP_W; x++) {
 
             if (map[y][x] == 1) {
     */
+    //読み込んだ範囲で画面に表示する
     for (int y = 0; y < MAP_H; y++) {
-        for (int x = 0; x < MAP_W; x++) {
+        for (int x = startX; x < endX; x++) {
 
-            tileMapObjectArrays[y][x]->Draw(renderer, x, y);
+            tileMapObjectArrays[y][x]->Draw(renderer, x, y,cameraX);
         }
     }
 }

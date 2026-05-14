@@ -6,7 +6,7 @@ RectObject::RectObject(float _x1, float _y1, float _x2, float _y2, D2D1::ColorF 
 {
 }
 
-void RectObject::Draw(Renderer& renderer)
+void RectObject::Draw(Renderer& renderer) const
 {
     renderer.DrawRect(x1, y1, x1+x2, y1+y2, color);
 }

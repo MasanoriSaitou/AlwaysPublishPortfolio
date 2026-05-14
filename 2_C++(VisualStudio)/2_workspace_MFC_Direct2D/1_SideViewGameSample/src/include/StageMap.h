@@ -1,6 +1,7 @@
 #include "Renderer.h"
 #include "StageMapObject.h"
 #include "CollisionResult.h"
+#include "TileType.h"
 
 #pragma once
 class StageMap
@@ -32,5 +33,6 @@ class StageMap
         float ResolveCollisionX_Tile1(float x, float y, float w, float h, float moveX);
         float ResolveCollisionY_Tile1(float x, float y, float w, float h, float moveY, bool& isGround);
         float LimitPosLeftX(float x, float width);
+        vector<TileType> GetTilesInRect(float x, float y, float w, float h) const;
 };
 
