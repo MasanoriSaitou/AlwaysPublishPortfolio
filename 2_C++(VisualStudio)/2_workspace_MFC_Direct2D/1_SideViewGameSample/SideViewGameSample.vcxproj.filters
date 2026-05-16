@@ -37,6 +37,12 @@
     <Filter Include="ヘッダー ファイル\main">
       <UniqueIdentifier>{857ea0ca-faba-4b86-84b0-aef2a4770c75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameLibary">
+      <UniqueIdentifier>{c5d280f0-ad27-49a7-b624-80c8b8382681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameLibrary">
+      <UniqueIdentifier>{395f033d-7fa0-48f4-9c36-3a18be541a79}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SideViewGameSample.rc">
@@ -201,6 +207,9 @@
     <ClCompile Include="src\src\KillBlockObject.cpp">
       <Filter>ソース ファイル\GameLogic\GameObject</Filter>
     </ClCompile>
+    <ClCompile Include="src\GameLibrary\GameLibrary.cpp">
+      <Filter>ソース ファイル\GameLibary</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ClassView.h">
@@ -295,6 +304,12 @@
     </ClInclude>
     <ClInclude Include="src\include\KillBlockObject.h">
       <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\PowerUpLevel.h">
+      <Filter>ヘッダー ファイル\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameLibrary\GameLibrary.h">
+      <Filter>ヘッダー ファイル\GameLibrary</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

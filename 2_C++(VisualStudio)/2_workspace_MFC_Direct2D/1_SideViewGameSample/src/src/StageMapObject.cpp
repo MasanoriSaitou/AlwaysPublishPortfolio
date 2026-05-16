@@ -58,7 +58,31 @@ StageMapObject::StageMapObject() {
 TileType StageMapObject::OnHit(int x, int y) {
 
     tileMapObjectArrays[y][x]->OnHit();
-    return tileMapObjectArrays[y][x]->GetTileType();
+    TileType result = tileMapObjectArrays[y][x]->GetTileType();
+    ChkDisappearanceTileMapObjects(x,y);  //タイルマップが消滅したかをチェックする
+    return result;
+}
+
+void StageMapObject::ChkDisappearanceTileMapObjects(int x, int y) {
+
+    if (IsDisappearanceTileMapObject(x, y)) {
+
+        DisappearanceTileMapObject(x, y); //消滅しているのならば、オブジェクト自体を消滅させる
+    }
+}
+
+bool StageMapObject::IsDisappearanceTileMapObject(int x, int y) const {
+
+    //タイルマップが消滅するかどうかを確認する
+    return tileMapObjectArrays[y][x]->IsDisappearance();
+}
+
+void StageMapObject::DisappearanceTileMapObject(int x, int y){
+
+    //タイルマップの消滅
+    //0:空気 ⇒親クラスをそのまま入れる
+    map[y][x] = 0;
+    tileMapObjectArrays[y][x] = make_unique<TileMapObject>();
 }
 
 bool StageMapObject::IsSolidTile(int tileX, int tileY, int tileKind) const {
@@ -84,10 +108,10 @@ void StageMapObject::Draw(Renderer& renderer,float cameraX,float screenWidth) co
             if (map[y][x] == 1) {
     */
     //読み込んだ範囲で画面に表示する
-    for (int y = 0; y < MAP_H; y++) {
+    for (int y = MAP_H-1; y >= 0; y--) {
         for (int x = startX; x < endX; x++) {
 
-            tileMapObjectArrays[y][x]->Draw(renderer, x, y,cameraX);
+            tileMapObjectArrays[y][x]->Draw(renderer, x, y, +5,cameraX);
         }
     }
 }

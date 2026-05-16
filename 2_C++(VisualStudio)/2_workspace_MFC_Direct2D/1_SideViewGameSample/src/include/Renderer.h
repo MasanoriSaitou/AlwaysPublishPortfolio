@@ -1,6 +1,8 @@
 #pragma once
 //Direct2D—LŒø‰»
 #include <d2d1.h>
+#include <vector>
+using namespace std;
 
 class Renderer
 {
@@ -16,6 +18,8 @@ public:
     void DrawCircle(float cx, float cy, float radius, D2D1::ColorF color);
     void DrawLine(float x1, float y1, float x2, float y2, float strokeWidth, D2D1::ColorF color);
     void DrawRectOutline(float x1, float y1, float x2, float y2, float strokeWidth, D2D1::ColorF color);
+    void DrawPolygon(const vector<D2D1_POINT_2F>& points, D2D1::ColorF color);
+    void DrawPolygonOutline(const vector<D2D1_POINT_2F>& points, float strokeWidth, D2D1::ColorF color);
     int GetScreenWidth() const;
     int GetScreenHeight() const;
 

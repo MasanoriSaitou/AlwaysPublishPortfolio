@@ -62,7 +62,7 @@ bool Renderer::Begin()
 
 void Renderer::End()
 {
-    if (!m_pRenderTarget) return;          // ★ これを追加
+    if (!m_pRenderTarget) return;          
     HRESULT hr = m_pRenderTarget->EndDraw();
     if (hr == D2DERR_RECREATE_TARGET)
     {
@@ -73,7 +73,7 @@ void Renderer::End()
 
 void Renderer::Clear(float r, float g, float b)
 {
-    if (!m_pRenderTarget) return;              // ★ 追加
+    if (!m_pRenderTarget) return;              
     m_pRenderTarget->Clear(D2D1::ColorF(r, g, b));
 }
 
@@ -146,6 +146,68 @@ void Renderer::DrawRectOutline(float x1, float y1, float x2, float y2, float str
     );
 
     brush->Release();
+}
+
+void Renderer::DrawPolygon(const vector<D2D1_POINT_2F>& points, D2D1::ColorF color)
+{
+    // ブラシを作る
+    ID2D1SolidColorBrush* brush = nullptr;
+    m_pRenderTarget->CreateSolidColorBrush(color, &brush);
+
+    // ジオメトリ（多角形の形）を作る
+    ID2D1PathGeometry* geometry = nullptr;
+    m_pFactory->CreatePathGeometry(&geometry);
+
+    ID2D1GeometrySink* sink = nullptr;
+    geometry->Open(&sink);
+
+    // 図形の開始
+    sink->BeginFigure(points[0], D2D1_FIGURE_BEGIN_FILLED);
+
+    // 残りの点を線でつなぐ
+    for (size_t i = 1; i < points.size(); i++) {
+        sink->AddLine(points[i]);
+    }
+
+    // 図形を閉じる
+    sink->EndFigure(D2D1_FIGURE_END_CLOSED);
+    sink->Close();
+
+    // 塗りつぶし
+    m_pRenderTarget->FillGeometry(geometry, brush);
+
+    // 後片付け
+    brush->Release();
+    geometry->Release();
+}
+
+void Renderer::DrawPolygonOutline(const vector<D2D1_POINT_2F>& points, float strokeWidth, D2D1::ColorF color)
+{
+    // ブラシ作成
+    ID2D1SolidColorBrush* brush = nullptr;
+    m_pRenderTarget->CreateSolidColorBrush(color, &brush);
+
+    // ジオメトリ作成
+    ID2D1PathGeometry* geometry = nullptr;
+    m_pFactory->CreatePathGeometry(&geometry);
+
+    ID2D1GeometrySink* sink = nullptr;
+    geometry->Open(&sink);
+
+    sink->BeginFigure(points[0], D2D1_FIGURE_BEGIN_HOLLOW);
+
+    for (size_t i = 1; i < points.size(); i++) {
+        sink->AddLine(points[i]);
+    }
+
+    sink->EndFigure(D2D1_FIGURE_END_CLOSED);
+    sink->Close();
+
+    // 輪郭描画
+    m_pRenderTarget->DrawGeometry(geometry, brush, strokeWidth);
+
+    brush->Release();
+    geometry->Release();
 }
 
 int Renderer::GetScreenWidth() const { return m_screenWidth; }

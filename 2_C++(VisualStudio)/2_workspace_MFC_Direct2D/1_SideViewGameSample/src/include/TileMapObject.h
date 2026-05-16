@@ -3,9 +3,14 @@
 #pragma once
 class TileMapObject
 {
+protected:
+    bool isDisappearance;  //オブジェクト自体が消滅したか
 public:
     static const int TILE_SIZE = 32;
-    virtual void Draw(Renderer& renderer,int x,int y,float);
+    TileMapObject();
+    bool IsDisappearance() const;
+    virtual void Draw(Renderer& renderer,int x,int y,float,float);
     virtual TileType GetTileType();
     virtual void OnHit();
+    virtual ~TileMapObject() = default; //デストラクタ
 };

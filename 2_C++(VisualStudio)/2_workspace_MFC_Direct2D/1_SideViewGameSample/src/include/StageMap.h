@@ -35,4 +35,3 @@ class StageMap
         float LimitPosLeftX(float x, float width);
         vector<TileType> GetTilesInRect(float x, float y, float w, float h) const;
 };
-

@@ -9,12 +9,11 @@ GameMain::GameMain(Renderer& r)
 	, m_player2(100, 150, 150, 150, D2D1::ColorF(D2D1::ColorF::Aqua))
 	, m_ball(200, 200, 30, D2D1::ColorF(D2D1::ColorF::Yellow))
 	, m_line(10, 10, 100, 10, 5.0f, D2D1::ColorF(D2D1::ColorF::Green))
-	, player(60, 400, 40, 122, D2D1::ColorF(D2D1::ColorF::Blue))
+	, player(60, 300, D2D1::ColorF(D2D1::ColorF::Blue))
 	, pController(player, inputKey)
 	, stageMapObject()
 	, stageMap(stageMapObject)
-	, camera()
-{
+	, camera(){
 }
 
 void GameMain::Initialize() {

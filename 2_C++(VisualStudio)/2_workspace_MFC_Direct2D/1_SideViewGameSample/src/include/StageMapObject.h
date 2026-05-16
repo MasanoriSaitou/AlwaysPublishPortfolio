@@ -17,8 +17,11 @@ class StageMapObject
         bool IsSolidTile(int tileX, int tileY, int tileKind)const;
         void Draw(Renderer& renderer,float,float) const;
         TileType OnHit(int tx,int ty);
+        void DisappearanceTileMapObject(int x, int y);
+        bool IsDisappearanceTileMapObject(int x, int y) const;
 
     private:
+        void ChkDisappearanceTileMapObjects(int x, int y);
         vector<vector<unique_ptr<TileMapObject>>> tileMapObjectArrays;
         int map[MAP_H][MAP_W] = {
 
