@@ -2,14 +2,25 @@
 #include "GameLibrary/GameLibrary.h"
 using namespace Library;
 
-void GameLibrary::DrawBlock(Renderer& renderer, int x, int y,float offsetY, float cameraX, int TILE_SIZE, optional<ColorF> colorFront, optional<ColorF> colorTop, optional<ColorF> colorSide){
+void GameLibrary::DrawBlock(Renderer& renderer, int x, int y,float offsetY, const Camera& camera, int TILE_SIZE, optional<ColorF> colorFront, optional<ColorF> colorTop, optional<ColorF> colorSide){
 
-    float x1 = x * TILE_SIZE - cameraX;
-    float y1 = y * TILE_SIZE + offsetY;  //Y座標は少しずらして描画できる
-    float x2 = (x + 1) * TILE_SIZE - cameraX;
-    float y2 = (y + 1) * TILE_SIZE + offsetY;
+    //拡大率(棒人間と合わせること）
+    float const bigRate = 1.3f;
 
-    float offset = 10.0f; // 奥行きの量（調整可能）
+    // 論理座標（ゲーム内座標）
+    float wx1 = x * TILE_SIZE;
+    float wy1 = y * TILE_SIZE + offsetY;
+    float wx2 = (x + 1) * TILE_SIZE;
+    float wy2 = (y + 1) * TILE_SIZE + offsetY;
+
+    // スケールされた奥行き
+    float offset = camera.ScaleSize(10.0f);
+
+    // カメラ変換（世界 → 画面）
+    float x1 = camera.WorldToScreenX(wx1)* bigRate;
+    float y1 = camera.WorldToScreenY(wy1)* bigRate;
+    float x2 = camera.WorldToScreenX(wx2)* bigRate;
+    float y2 = camera.WorldToScreenY(wy2)* bigRate;
 
     //カラー設定
     //上部等未指定の場合は自動設定
@@ -23,13 +34,13 @@ void GameLibrary::DrawBlock(Renderer& renderer, int x, int y,float offsetY, floa
     //===========================
     renderer.DrawRectOutline(
         x1, y1, x2, y2,
-        1.0f,
+        camera.ScaleSize(1.0f), // 線の太さもスケール
         ColorF(ColorF::Black)
     );
 
     renderer.DrawRect(
         x1, y1, x2, y2,
-        ColorF(colorTop.value())
+        ColorF(colorSide.value())
     );
 
     //===========================
@@ -43,7 +54,7 @@ void GameLibrary::DrawBlock(Renderer& renderer, int x, int y,float offsetY, floa
 
         renderer.DrawPolygon({ p1, p2, p3, p4 },
             ColorF(colorTop.value()));
-        renderer.DrawPolygonOutline({ p1, p2, p3, p4 }, 0.5f, ColorF(ColorF::Black));
+        renderer.DrawPolygonOutline({ p1, p2, p3, p4 }, camera.ScaleSize(0.5f), ColorF(ColorF::Black));
     }
 
     //===========================
@@ -57,16 +68,28 @@ void GameLibrary::DrawBlock(Renderer& renderer, int x, int y,float offsetY, floa
 
         renderer.DrawPolygon({ s1, s2, s3, s4 },
             ColorF(colorSide.value()));
-        renderer.DrawPolygonOutline({ s1, s2, s3, s4 }, 0.5f, ColorF(ColorF::Black));
+        renderer.DrawPolygonOutline({ s1, s2, s3, s4 }, camera.ScaleSize(0.5f), ColorF(ColorF::Black));
     }
 }
 
-void GameLibrary::DrawStickMan(const StickManInfo& info, Renderer& renderer, float x,float y) {
+void GameLibrary::DrawStickMan(const StickManInfo& info, Renderer& renderer, float x,float y,const Camera& camera) {
 
-    float headRadius = info.headRadius;
-    float bodyLength = info.bodyLength;
-    float limbLength = info.limbLength;
-    float lineWidth = info.lineWidth;
+    //拡大率(棒人間と合わせること）
+    float const bigRate = 1.3f;
+
+    // --- カメラ変換（世界 → 画面） ---
+    x = camera.WorldToScreenX(x)* bigRate; //カメラのX座標をスクロールに使用
+    y = camera.WorldToScreenY(y)* bigRate;
+
+    //拡大係数
+    float coeX = camera.GetScaleX();
+    float coeY = camera.GetScaleY();
+
+    // スケールされた寸法
+    float headRadius = info.headRadius * coeY * bigRate; //*camera.GetScaleX();
+    float bodyLength = info.bodyLength * coeY * bigRate; // *camera.GetScaleX();
+    float limbLength = info.limbLength * coeY * bigRate;
+    float lineWidth = info.lineWidth * coeY * bigRate;
 
     // 頭
     renderer.DrawCircle(x, y, headRadius, info.colorHead);
@@ -105,4 +128,62 @@ float GameLibrary::GetStickManHeight(const StickManInfo& info)
 {
     // 頭中心から足先までの距離
     return info.headRadius + info.bodyLength + info.limbLength;
+}
+
+void GameLibrary::DrawTriangleTile(
+    Renderer& renderer,
+    int tileX, int tileY,
+    float offsetX,
+    const Camera& camera,
+    int TILE_SIZE,
+    ColorF color,
+    int direction){
+
+    // 拡大率（棒人間と合わせる）
+    float const bigRate = 1.3f;
+
+    // --- 世界座標（タイルの四隅） ---
+    float wx1 = tileX * TILE_SIZE + offsetX;
+    float wy1 = tileY * TILE_SIZE;
+    float wx2 = (tileX + 1) * TILE_SIZE + offsetX;
+    float wy2 = (tileY + 1) * TILE_SIZE;
+
+    // --- 画面座標へ変換 ---
+    float x1 = camera.WorldToScreenX(wx1) * bigRate;
+    float y1 = camera.WorldToScreenY(wy1) * bigRate;
+    float x2 = camera.WorldToScreenX(wx2) * bigRate;
+    float y2 = camera.WorldToScreenY(wy2) * bigRate;
+
+    // --- 三角形の頂点を決める ---
+    D2D1_POINT_2F p1, p2, p3;
+
+    switch (direction) {
+    case 0: // 上向き
+        p1 = { (x1 + x2) / 2, y1 };
+        p2 = { x1, y2 };
+        p3 = { x2, y2 };
+        break;
+
+    case 1: // 右向き
+        p1 = { x2, (y1 + y2) / 2 };
+        p2 = { x1, y1 };
+        p3 = { x1, y2 };
+        break;
+
+    case 2: // 下向き
+        p1 = { (x1 + x2) / 2, y2 };
+        p2 = { x1, y1 };
+        p3 = { x2, y1 };
+        break;
+
+    case 3: // 左向き
+        p1 = { x1, (y1 + y2) / 2 };
+        p2 = { x2, y1 };
+        p3 = { x2, y2 };
+        break;
+    }
+
+    // --- 描画 ---
+    renderer.DrawPolygon({ p1, p2, p3 }, color);
+    renderer.DrawPolygonOutline({ p1, p2, p3 }, camera.ScaleSize(1.0f), ColorF(ColorF::Black));
 }

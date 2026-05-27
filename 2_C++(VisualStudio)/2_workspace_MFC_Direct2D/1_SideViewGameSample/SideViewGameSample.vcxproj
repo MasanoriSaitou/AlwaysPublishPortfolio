@@ -246,6 +246,7 @@
     <ClCompile Include="src\src\Renderer.cpp" />
     <ClCompile Include="src\src\StageMap.cpp" />
     <ClCompile Include="src\src\StageMapObject.cpp" />
+    <ClCompile Include="src\src\ThornBlockObject.cpp" />
     <ClCompile Include="src\src\TileMap.cpp" />
     <ClCompile Include="src\src\TileMapObject.cpp" />
     <ClCompile Include="src\ViewTree.cpp" />
@@ -271,6 +272,7 @@
     <ClInclude Include="src\include\Renderer.h" />
     <ClInclude Include="src\include\StageMap.h" />
     <ClInclude Include="src\include\StageMapObject.h" />
+    <ClInclude Include="src\include\ThornBlockObject.h" />
     <ClInclude Include="src\include\TileMap.h" />
     <ClInclude Include="src\include\TileMapObject.h" />
     <ClInclude Include="src\include\TileType.h" />

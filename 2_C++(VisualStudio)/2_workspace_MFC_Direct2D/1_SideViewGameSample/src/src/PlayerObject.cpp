@@ -44,7 +44,7 @@ PlayerObject::PlayerObject(float _x, float _y, D2D1::ColorF _color)
 //    }
 //}
 
-void PlayerObject::Draw(Renderer& renderer, float cameraX) {
+void PlayerObject::Draw(Renderer& renderer,const Camera& camera) {
 
     //PlayerInfo設定
     currentPlayerInfo = playerInfo;
@@ -77,8 +77,11 @@ void PlayerObject::Draw(Renderer& renderer, float cameraX) {
         default:
             break;
     }
+    // 幅と高さの更新（論理サイズ）
     width = GameLibrary::GetStickManWidth(currentPlayerInfo);
     hight = GameLibrary::GetStickManHeight(currentPlayerInfo);
-    drawX = x - cameraX; //カメラのX座標をスクロールに使用
-    GameLibrary::DrawStickMan(currentPlayerInfo, renderer, drawX, y);
+
+    // 描画（Camera 対応版 DrawStickMan を呼ぶ）
+    //drawX = x - cameraX; 
+    GameLibrary::DrawStickMan(currentPlayerInfo, renderer, x, y, camera);
 }

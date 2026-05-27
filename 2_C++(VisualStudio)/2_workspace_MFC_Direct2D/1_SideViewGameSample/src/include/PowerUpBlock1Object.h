@@ -3,7 +3,7 @@
 class PowerUpBlock1Object :public TileMapObject{
 
 public:
-	void Draw(Renderer& renderer, int x, int y,float,float) override;
+	void Draw(Renderer& renderer, int x, int y,float, const Camera&) override;
 	TileType GetTileType() override;
 	void OnHit() override;
 };

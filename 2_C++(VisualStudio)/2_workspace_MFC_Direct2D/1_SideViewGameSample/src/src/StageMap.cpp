@@ -6,6 +6,8 @@ StageMap::StageMap(StageMapObject& s)
     ,TILE_SIZE(s.TILE_SIZE)
     , MAP_W(s.MAP_W)
     , MAP_H(s.MAP_H) {
+
+    stageMapObject.Initialize();
 }
 
 vector<TileType> StageMap::GetTilesInRect(float x, float y, float w, float h) const{

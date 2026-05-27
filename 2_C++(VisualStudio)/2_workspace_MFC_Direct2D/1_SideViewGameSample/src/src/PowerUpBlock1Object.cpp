@@ -13,7 +13,7 @@ void PowerUpBlock1Object::OnHit() {
     isDisappearance = true;
 }
 
-void PowerUpBlock1Object::Draw(Renderer& renderer, int x, int y, float offsetY, float cameraX) {
+void PowerUpBlock1Object::Draw(Renderer& renderer, int x, int y, float offsetY, const Camera& camera) {
 
-    GameLibrary::DrawBlock(renderer,x,y,offsetY,cameraX,TILE_SIZE,ColorF::Red);
+    GameLibrary::DrawBlock(renderer,x,y,offsetY,camera,TILE_SIZE,ColorF::Red);
 }

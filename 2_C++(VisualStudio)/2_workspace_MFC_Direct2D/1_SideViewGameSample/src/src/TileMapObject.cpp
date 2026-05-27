@@ -11,7 +11,7 @@ TileType TileMapObject::GetTileType(){
 	return TileType::Empty;
 }
 
-void TileMapObject::Draw(Renderer& renderer,int x,int y,float offsetY,float cameraX){
+void TileMapObject::Draw(Renderer& renderer,int x,int y,float offsetY,const Camera& cameraX){
 }
 
 void TileMapObject::OnHit(){

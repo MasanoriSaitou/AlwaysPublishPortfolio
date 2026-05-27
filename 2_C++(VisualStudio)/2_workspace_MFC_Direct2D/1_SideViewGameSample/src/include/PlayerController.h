@@ -8,13 +8,16 @@ class PlayerController
 	PlayerObject& player;
 	InputKey& inputKey;
 	double delta;
-	float velocityY = 0.0f;
+	float velocityX, velocityY;
 	bool isGrounded = false; //地面にいるかの判定
 	char isJump;
 	int direX,direY;
 	double speed = 300.0; //800 // 1秒あたり100px の速度
 	double fallTime = 0.0f;  //落下時間計測
 	bool isDead; //死亡フラグ
+	bool isInvincible = false;    //無敵状態フラグ
+	float invincibleTimer = 0.0f; //無敵時間タイマー
+
 
 	//パワーアップ
 	bool canJump;
@@ -33,7 +36,7 @@ public:
 	PlayerController(PlayerObject& p, InputKey& i);
 	void Update(double delta, StageMap& map);
 	void ApplyMovement(StageMap& map);
-	void KillPlayer();
+	void KillPlayer(bool isBounce = true);
 	bool IsPlayerDead() const;
 	void Jump();
 	void AirWalk();

@@ -1,3 +1,4 @@
+#pragma once
 #include "RectObject.h"
 #include "include/CircleObject.h"
 #include "include/LineObject.h"
@@ -6,21 +7,23 @@
 #include "include/PlayerController.h"
 #include "include/InputKey.h"
 #include "include/Camera.h"
-#pragma once
+using namespace std;
 
 class GameMain{
 
+	float deathTimer;
+	bool isWaitingRespawn;
 	Renderer& renderer;
-	RectObject m_player;
-	RectObject m_player2;
-	PlayerObject player;
-	PlayerController pController;
-	CircleObject m_ball;
-	LineObject m_line;
-	StageMap stageMap;
-	StageMapObject stageMapObject;
 	InputKey inputKey;
-	Camera camera;
+	PlayerObject player;
+	StageMapObject stageMapObject;
+	unique_ptr<RectObject> m_player;
+	unique_ptr<RectObject> m_player2;
+	unique_ptr<PlayerController> pController;
+	unique_ptr<CircleObject> m_ball;
+	unique_ptr<LineObject> m_line;
+	unique_ptr<StageMap> stageMap;
+	unique_ptr<Camera> camera;
 
 public:
 

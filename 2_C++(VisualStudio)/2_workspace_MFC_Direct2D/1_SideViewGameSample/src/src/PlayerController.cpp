@@ -16,9 +16,15 @@ PlayerController::PlayerController(PlayerObject& p,InputKey& i)
     canAttack(false),
     canAirWalk(false),
     canAirWalkFree(false),
-	powerUpLevel(PowerUpLevel::Normal){
+	powerUpLevel(PowerUpLevel::Small),
+	isInvincible(false),
+	invincibleTimer(0.0f),
+    velocityX(0.0f),
+	velocityY(0.0f){
 
 	//プレイヤーの初期状態を設定
+	player.x = 60.0f;
+	player.y = 300.0f;
 	ApplyPowerUp(powerUpLevel);
 }
 
@@ -27,19 +33,44 @@ void PlayerController::Update(double delta, StageMap& map) {
 	//前フレームからの経過秒の取得
 	this->delta = delta;
 
-	//移動方向を決める
-	direX = 0;
-	direY = 0;
-	if (inputKey.isLeft)  direX = -1;
-	if (inputKey.isRight) direX = 1;
-	if (inputKey.isUp) direY = -1;
-	if (inputKey.isDown) direY = 1;
+	//プレイヤー死亡判定
+	if (!isDead) {
 
-	//プレイヤーアクション
-	if (canJump || canDoubleJump) Jump(); //ジャンプ
-	//if (canAttack) Attack();
-	if (canAirWalk) AirWalk();
-	if (canAirWalkFree) AirWalkFree();
+		// --- ダメージ直後の無敵状態 ---
+		if (isInvincible) {
+			invincibleTimer -= delta;
+
+			// ノックバック中は操作無効
+			direX = 0;
+
+			// ノックバックの減衰
+			velocityX *= 0.96f;
+
+			if (invincibleTimer <= 0.0f) {
+
+				isInvincible = false;
+				velocityX = 0.0f; // ノックバック終了
+			}
+		}
+		else {
+
+			// 通常時の入力処理
+			//移動方向を決める
+			direX = 0;
+			direY = 0;
+			if (inputKey.isLeft)  direX = -1;
+			if (inputKey.isRight) direX = 1;
+			if (inputKey.isUp) direY = -1;
+			if (inputKey.isDown) direY = 1;
+			velocityX = direX * speed; // 通常移動
+		}
+
+		//プレイヤーアクション
+		if (canJump || canDoubleJump) Jump(); //ジャンプ
+		//if (canAttack) Attack();
+		if (canAirWalk) AirWalk();
+		if (canAirWalkFree) AirWalkFree();
+	}
 
 	//3段階目のパワーアップの時以外は、世界の重力を常に受け続ける
 	if (powerUpLevel != PowerUpLevel::Power3) {
@@ -54,14 +85,13 @@ void PlayerController::Update(double delta, StageMap& map) {
 		velocityY = 0.0f;
 		fallTime = 0.0f;
 		isJump = 0;
-		OutputDebugString(L"着地したよ!\n");
 	}
 	
 	// 落下量（速度 × delta）
 	//float fall = velocityY * delta;
 
 	// delta は「前フレームからの経過秒」
-	moveX = (float)(speed * direX * delta);
+	moveX = (float)(velocityX * delta);
 	moveY = (float)(velocityY * delta); /*+ (float)(speed * direY * delta)*/
 	//moveY = velocityY * delta;
 	//player.x += moveX;
@@ -72,12 +102,26 @@ void PlayerController::Update(double delta, StageMap& map) {
 
 void PlayerController::Damage() {
 
+	// 無敵中は何もしない
+	if (isInvincible) {
+
+		return;
+	}
+
 	if (powerUpLevel > PowerUpLevel::Small) {
 
+		//パワーダウン
 		ApplyPowerUp((PowerUpLevel)((int)powerUpLevel - 1));
-	}
-	else {
+		//無敵時間(2秒間点滅)
+		isInvincible = true;
+		invincibleTimer = 1.0f;
 
+		//左にノックバック移動
+		velocityX = -200.0f;
+	}
+	else{
+
+		//プレイヤー死亡
 		KillPlayer();
 	}
 }
@@ -151,7 +195,7 @@ void PlayerController::Jump(){
 	//地上ジャンプ：パワーアップがSmall状態の時
 	bool groundJump = pressedW && isGrounded;
 	//空中ジャンプ：パワーアップがNormal状態以上の時
-	bool doubleJump = pressedW && canDoubleJump && isJump <= 1;
+	bool doubleJump = pressedW && canDoubleJump && (int)isJump == 1;
 	if (groundJump || doubleJump) {
 
 		velocityY = -1200.0f;   // ジャンプ力（調整可能）
@@ -197,12 +241,20 @@ void PlayerController::AirWalkFree() {
 
 void PlayerController::ApplyMovement(StageMap& map) {
 
-	//衝突判定
+	//衝突判定X
 	player.x = map.ResolveCollisionX(player.x, player.y, player.width, player.hight, moveX);
-	player.y = map.ResolveCollisionY(player.x, player.y, player.width, player.hight, moveY, isGrounded);
-
 	//左端判定
 	player.x = map.LimitPosLeftX(player.x, player.width);
+
+	//プレイヤー死亡時には無視される
+	if (isDead) {
+
+		player.y += moveY;
+		return;
+	}
+
+	//衝突判定Y
+	player.y = map.ResolveCollisionY(player.x, player.y, player.width, player.hight, moveY, isGrounded);
 
 	vector<TileType> tiles = map.GetTilesInRect(player.x, player.y, player.width, player.hight);
 
@@ -211,22 +263,32 @@ void PlayerController::ApplyMovement(StageMap& map) {
 		switch (t) {
 
 			//死亡判定
-			case TileType::Death:
-				KillPlayer();
-				return;
+			case TileType::Death: {
 
+				KillPlayer(false);
+				return;
+			}
+			//パワーアップブロックに触れた
 			case TileType::PowerUp1: {
 
 				int next = static_cast<int>(powerUpLevel) + 1;
 				ApplyPowerUp(static_cast<PowerUpLevel>(next));
 				break;
 			}
-			case TileType::Goal:
+			//トゲに触れた
+			case TileType::Thorn:{
+
+				Damage();
+				break;
+			}
+			//ゴールに触れた
+			case TileType::Goal: {
 				//ReachGoal();
 				return;
-
-			default:
+			}
+			default: {
 				break;
+			}
 		}
 	}
 }
@@ -235,13 +297,24 @@ void PlayerController::ApplyMovement(StageMap& map) {
 /// KillPlayer
 /// </summary>
 /// プレイヤーが死亡する
-void PlayerController::KillPlayer() {
+void PlayerController::KillPlayer(bool isBounce) {
 
 	////死亡判定
 	//if (-1 != map.CheckCollisionY(player.x, player.y, player.width, player.hight, moveY, 9).ty) {
+	if (isDead) return; // 二重死防止
 	//死亡
 	isDead = true;
-	OutputDebugString(L"プレイヤー死亡!\n");
+	// 死亡ジャンプ（上に跳ねる）
+	if (isBounce) {
+
+		velocityY = -1000.0f;   // 好きな値に調整
+		isGrounded = false; //空中へ
+	}
+
+	// 入力無効にする
+	direX = 0;
+	direY = 0;
+	velocityX = 0.0f; // 横移動は止める
 }
 
 /// <summary>

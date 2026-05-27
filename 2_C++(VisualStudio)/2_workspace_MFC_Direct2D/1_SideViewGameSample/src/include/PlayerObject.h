@@ -3,6 +3,7 @@
 #include "CircleObject.h"
 #include "LineObject.h"
 #include "PowerUpLevel.h"
+#include "Camera.h"
 #include "GameLibrary/GameLibrary.h"
 using namespace Library;
 
@@ -30,5 +31,5 @@ public:
     D2D1::ColorF color;
 
     PlayerObject(float _x, float _y, D2D1::ColorF _color);
-    void Draw(Renderer& renderer,float);
+    void Draw(Renderer& renderer,const Camera&);
 };

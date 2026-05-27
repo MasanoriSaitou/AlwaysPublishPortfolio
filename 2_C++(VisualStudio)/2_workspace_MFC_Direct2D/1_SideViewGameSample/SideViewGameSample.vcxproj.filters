@@ -210,6 +210,9 @@
     <ClCompile Include="src\GameLibrary\GameLibrary.cpp">
       <Filter>ソース ファイル\GameLibary</Filter>
     </ClCompile>
+    <ClCompile Include="src\src\ThornBlockObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ClassView.h">
@@ -310,6 +313,9 @@
     </ClInclude>
     <ClInclude Include="src\GameLibrary\GameLibrary.h">
       <Filter>ヘッダー ファイル\GameLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\ThornBlockObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

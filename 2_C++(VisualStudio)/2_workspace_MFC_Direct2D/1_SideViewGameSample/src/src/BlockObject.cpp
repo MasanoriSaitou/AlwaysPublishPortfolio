@@ -8,7 +8,7 @@ TileType BlockObject::GetTileType() {
     return TileType::Ground;
 }
 
-void BlockObject::Draw(Renderer& renderer, int x, int y,float offsetY,float cameraX){
+void BlockObject::Draw(Renderer& renderer, int x, int y,float offsetY, const Camera& camera){
 
-    GameLibrary::DrawBlock(renderer, x, y, offsetY,cameraX, TILE_SIZE, ColorF::Brown);
+    GameLibrary::DrawBlock(renderer, x, y, offsetY,camera, TILE_SIZE, ColorF::Brown);
 }
