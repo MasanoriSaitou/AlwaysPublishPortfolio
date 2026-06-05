@@ -1,0 +1,32 @@
+ブラウザアプリは「TypeScript→JavaScriptへの変換」が必要となる。
+そのため変換に関するnpm / npx / tsc が Node.js に付属していることから、
+TS → JS の変換は Node.js のツールチェーンで行うため、
+Node.jsのインストールが必須となる。
+
+dist/にJavaScriptのファイルが生成され、
+index.htmlが最初にdist/のファイルを読みに行く。
+
+ブラウザアプリは直接jsファイルを起動することはできず、index.htmlが起点となり動き始める。
+
+①正しい TypeScript を入れる(以降のコマンドを、VSCodeのターミナルで実行)
+npm install -D typescript
+
+②tsconfig.json を作り、内容は要修正
+npx tsc --init
+
+③監視モードでコンパイル(複数のtsファイルを一つのjsファイルにまとめる)
+npx esbuild src/view/GameUI.ts --bundle --outfile=dist/view/GameUI.js --watch
+
+↓これだと複数ファイルが生成されてしまう
+npx tsc --watch
+
+基本的に③を実施すれると、src/tsファイルを編集すれば、
+distファイル配下のjsファイルも自動で更新されるが、
+distフォルダ内をまっさらにした時などで監視モードが止まる場合がある。
+そのときは「③監視モードでコンパイル」を再度実施
+dist/viewの中にjsファイルが無い場合も、「③監視モードでコンパイル」を再度実施
+
+dist/ の JS は 絶対に編集しない
+→ TS だけ編集していればOK！
+→ JS は自動生成される
+→ JS を触ると事故る
