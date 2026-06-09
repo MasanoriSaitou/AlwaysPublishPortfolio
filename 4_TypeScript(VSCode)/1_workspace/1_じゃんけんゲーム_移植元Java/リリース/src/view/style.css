@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hp {
+  font-size: 32px;
+  margin: 10px;
+}
+
+#message {
+  font-size: 28px;
+  margin: 20px;
+}
+
+#hpContainer {
+    display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: center;            /* 縦位置を揃える */
+}
+
+#player-hp {
+    text-align: left;
+}
+
+#cpu-hp {
+    text-align: right;
+}
+
+#retryButton {
+    display: flex;
+    justify-content: center; /* 横方向の中央寄せ */
+    margin-top: 20px;
+}

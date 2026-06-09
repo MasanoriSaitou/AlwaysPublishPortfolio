@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>じゃんけんゲーム</title>
+  <link rel="stylesheet" href="src/view/style.css">
+</head>
+<body>
+
+  <div id="hpContainer">
+    <div id="player-hp" class="hp"></div>
+    <div id="cpu-hp" class="hp"></div>
+  </div>
+
+  <div id="message">じゃんけんしよう、じゃんけーん...</div>
+
+  <div id="buttons">
+    <button data-hand="グー">グー</button>
+    <button data-hand="チョキ">チョキ</button>
+    <button data-hand="パー">パー</button>
+  </div>
+
+  <div id="retryButton">
+    <button id="retry" style="display:none;">もう一度挑戦</button>
+  </div>
+
+  <script src="dist/view/GameUI.js"></script>
+
+</body>
+</html>
