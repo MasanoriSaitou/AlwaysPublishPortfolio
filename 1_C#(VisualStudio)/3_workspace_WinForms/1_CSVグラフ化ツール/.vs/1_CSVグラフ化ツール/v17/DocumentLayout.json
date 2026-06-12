@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\3_workspace_WinForms\\1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3319F36-D46B-4CAB-8A2D-D08A2DF5EB8B}|1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB.csproj|c:\\users\\\u4FFA\\desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\selfstudy\\1_c#(visualstudio)\\3_workspace_winforms\\1_csv\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB\\src\\csvbarchartapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3319F36-D46B-4CAB-8A2D-D08A2DF5EB8B}|1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB.csproj|solutionrelative:src\\csvbarchartapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3319F36-D46B-4CAB-8A2D-D08A2DF5EB8B}|1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB.csproj|C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\3_workspace_WinForms\\1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3319F36-D46B-4CAB-8A2D-D08A2DF5EB8B}|1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CsvBarChartApp.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\3_workspace_WinForms\\1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB\\src\\CsvBarChartApp.cs",
+              "RelativeDocumentMoniker": "src\\CsvBarChartApp.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\3_workspace_WinForms\\1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB\\src\\CsvBarChartApp.cs",
+              "RelativeToolTip": "src\\CsvBarChartApp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T15:22:14.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\3_workspace_WinForms\\1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\\u4FFA\\Desktop\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\u30D7\u30ED\u30B0\u30E9\u30E0\u95A2\u4FC2\\\u683C\u95D8\u30B2\u30FC\u30E0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\\\u81EA\u5DF1\u7814\u947D\u306E\u7A4D\u307F\u91CD\u306D\\SelfStudy\\1_C#(VisualStudio)\\3_workspace_WinForms\\1_CSV\u30B0\u30E9\u30D5\u5316\u30C4\u30FC\u30EB\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T14:46:22.624Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
