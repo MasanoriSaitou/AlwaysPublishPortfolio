@@ -17,14 +17,6 @@ C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘�
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\CSVグラフ化ツール_\obj\Release\1_CSV___.B8A68FF9.Up2Date
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\CSVグラフ化ツール_\obj\Release\1_CSVグラフ化ツール.exe
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\1_CSVグラフ化ツール.exe.config
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\1_CSVグラフ化ツール.exe
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\EPPlus.dll
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\EPPlus.Interfaces.dll
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\EPPlus.System.Drawing.dll
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\Microsoft.IO.RecyclableMemoryStream.dll
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\System.ComponentModel.Annotations.dll
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\EPPlus.xml
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\bin\Release\Microsoft.IO.RecyclableMemoryStream.xml
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\obj\Release\1_CSVグラフ化ツール.csproj.AssemblyReference.cache
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\obj\Release\Interop.Excel.dll
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\obj\Release\Interop.Office.dll
@@ -32,5 +24,4 @@ C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘�
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\obj\Release\_1_CSVグラフ化ツール.Properties.Resources.resources
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\obj\Release\1_CSVグラフ化ツール.csproj.GenerateResource.cache
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\obj\Release\1_CSVグラフ化ツール.csproj.CoreCompileInputs.cache
-C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\obj\Release\1_CSV___.B8A68FF9.Up2Date
 C:\Users\俺\Desktop\デスクトップ\制作系\プログラム関係\格闘ゲームプロジェクト\自己研鑽の積み重ね\SelfStudy\1_C#(VisualStudio)\3_workspace_WinForms\1_CSVグラフ化ツール\obj\Release\1_CSVグラフ化ツール.exe

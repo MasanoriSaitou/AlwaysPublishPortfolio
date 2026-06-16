@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Users\\\u7BA1\u7406\u8005\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\uFF8C\uFF9F\uFF9B\uFF78\uFF9E\uFF97\uFF91\u95A2\u4FC2\\\u25CE\u81EA\u5DF1\u5B66\u7FD2\\SelfStudy\\6_Python(VisualStudio)\\1_workspace_Streamlit\\1_streamlit_csv_viewer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B6FBF7-9B02-4ECC-8871-4F49218F6F82}|streamlit_csv_viewer\\streamlit_csv_viewer.pyproj|E:\\Users\\\u7BA1\u7406\u8005\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\uFF8C\uFF9F\uFF9B\uFF78\uFF9E\uFF97\uFF91\u95A2\u4FC2\\\u25CE\u81EA\u5DF1\u5B66\u7FD2\\SelfStudy\\6_Python(VisualStudio)\\1_workspace_Streamlit\\1_streamlit_csv_viewer\\streamlit_csv_viewer\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E2B6FBF7-9B02-4ECC-8871-4F49218F6F82}|streamlit_csv_viewer\\streamlit_csv_viewer.pyproj|solutionrelative:streamlit_csv_viewer\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B6FBF7-9B02-4ECC-8871-4F49218F6F82}|streamlit_csv_viewer\\streamlit_csv_viewer.pyproj|E:\\Users\\\u7BA1\u7406\u8005\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\uFF8C\uFF9F\uFF9B\uFF78\uFF9E\uFF97\uFF91\u95A2\u4FC2\\\u25CE\u81EA\u5DF1\u5B66\u7FD2\\SelfStudy\\6_Python(VisualStudio)\\1_workspace_Streamlit\\1_streamlit_csv_viewer\\streamlit_csv_viewer\\streamlit_csv_viewer.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E2B6FBF7-9B02-4ECC-8871-4F49218F6F82}|streamlit_csv_viewer\\streamlit_csv_viewer.pyproj|solutionrelative:streamlit_csv_viewer\\streamlit_csv_viewer.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.py",
+              "DocumentMoniker": "E:\\Users\\\u7BA1\u7406\u8005\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\uFF8C\uFF9F\uFF9B\uFF78\uFF9E\uFF97\uFF91\u95A2\u4FC2\\\u25CE\u81EA\u5DF1\u5B66\u7FD2\\SelfStudy\\6_Python(VisualStudio)\\1_workspace_Streamlit\\1_streamlit_csv_viewer\\streamlit_csv_viewer\\app.py",
+              "RelativeDocumentMoniker": "streamlit_csv_viewer\\app.py",
+              "ToolTip": "E:\\Users\\\u7BA1\u7406\u8005\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\uFF8C\uFF9F\uFF9B\uFF78\uFF9E\uFF97\uFF91\u95A2\u4FC2\\\u25CE\u81EA\u5DF1\u5B66\u7FD2\\SelfStudy\\6_Python(VisualStudio)\\1_workspace_Streamlit\\1_streamlit_csv_viewer\\streamlit_csv_viewer\\app.py",
+              "RelativeToolTip": "streamlit_csv_viewer\\app.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-06-16T02:23:17.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "streamlit_csv_viewer.py",
+              "DocumentMoniker": "E:\\Users\\\u7BA1\u7406\u8005\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\uFF8C\uFF9F\uFF9B\uFF78\uFF9E\uFF97\uFF91\u95A2\u4FC2\\\u25CE\u81EA\u5DF1\u5B66\u7FD2\\SelfStudy\\6_Python(VisualStudio)\\1_workspace_Streamlit\\1_streamlit_csv_viewer\\streamlit_csv_viewer\\streamlit_csv_viewer.py",
+              "RelativeDocumentMoniker": "streamlit_csv_viewer\\streamlit_csv_viewer.py",
+              "ToolTip": "E:\\Users\\\u7BA1\u7406\u8005\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u5236\u4F5C\u7CFB\\\uFF8C\uFF9F\uFF9B\uFF78\uFF9E\uFF97\uFF91\u95A2\u4FC2\\\u25CE\u81EA\u5DF1\u5B66\u7FD2\\SelfStudy\\6_Python(VisualStudio)\\1_workspace_Streamlit\\1_streamlit_csv_viewer\\streamlit_csv_viewer\\streamlit_csv_viewer.py",
+              "RelativeToolTip": "streamlit_csv_viewer\\streamlit_csv_viewer.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-06-16T02:21:22.727Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

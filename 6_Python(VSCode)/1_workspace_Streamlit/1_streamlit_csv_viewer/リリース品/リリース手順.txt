@@ -1,0 +1,21 @@
+① PyInstaller をインストール
+VSCode のターミナルで：
+pip install pyinstaller
+
+② プロジェクトフォルダへ移動
+cd プロジェクトのフォルダ
+
+③ EXE を作るコマンド
+pyinstaller --noconfirm --onefile app.py
+
+
+これで dist/app.exeが生成される。
+
+
+↓
+失敗
+↓
+以下のバッチを作成し、バッチを起動して実行
+@echo off
+powershell -WindowStyle Hidden -Command "Start-Process streamlit -ArgumentList 'run app.py'"
+exit
