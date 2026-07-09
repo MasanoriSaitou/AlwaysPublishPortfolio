@@ -4,6 +4,7 @@
 #include "include/PowerUpBlock1Object.h"
 #include "include/KillBlockObject.h"
 #include "include/ThornBlockObject.h"
+#include "include/GoalObject.h"
 #include "algorithm"
 using namespace std;
 
@@ -42,17 +43,23 @@ void StageMapObject::Initialize() {
                     v.push_back(make_unique<BlockObject>());
                     break;
                 }
-                        //2:パワーアップブロック1
+                //2:パワーアップブロック1
                 case 2: {
                     v.push_back(make_unique<PowerUpBlock1Object>());
                     break;
                 }
-                        //3:トゲブロック
+                //3:トゲブロック
                 case 3: {
                     v.push_back(make_unique<ThornBlockObject>());
                     break;
                 }
-                        //9:死亡タイル　⇒見かけ上1のブロックを配置
+                //8:ゴールタイル
+                case 8: {
+
+                    v.push_back(make_unique<GoalObject>());
+                    break;
+                }
+                //9:死亡タイル　⇒見かけ上1のブロックを配置
                 case 9: {
                     v.push_back(make_unique<KillBlockObject>());
                     break;

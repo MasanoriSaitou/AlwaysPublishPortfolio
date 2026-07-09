@@ -45,6 +45,56 @@ void Renderer::Init(HWND hWnd)
         OutputDebugString(L"Start!\n");
         if (FAILED(hr)) {
             OutputDebugString(L"CreateHwndRenderTarget failed\n");
+            return;
+        }
+    }
+
+    // ★ DirectWrite 初期化（1回だけ）
+    if (!m_writeFactory)
+    {
+        HRESULT hr = DWriteCreateFactory(
+            DWRITE_FACTORY_TYPE_SHARED,
+            __uuidof(IDWriteFactory),
+            reinterpret_cast<IUnknown**>(&m_writeFactory)
+        );
+
+        if (FAILED(hr)) {
+            OutputDebugString(L"DWriteCreateFactory failed\n");
+            return;
+        }
+    }
+
+    // ★ フォント作成（1回だけ）
+    /*if (!m_textFormat)
+    {
+        HRESULT hr = m_writeFactory->CreateTextFormat(
+            L"Segoe UI Symbol",
+            nullptr,
+            DWRITE_FONT_WEIGHT_NORMAL,
+            DWRITE_FONT_STYLE_NORMAL,
+            DWRITE_FONT_STRETCH_NORMAL,
+            32.0f,
+            L"ja-jp",
+            &m_textFormat
+        );
+
+        if (FAILED(hr)) {
+            OutputDebugString(L"CreateTextFormat failed\n");
+            return;
+        }
+    }*/
+
+    // ★ ブラシ作成（1回だけ）
+    if (!m_textBrush)
+    {
+        HRESULT hr = m_pRenderTarget->CreateSolidColorBrush(
+            D2D1::ColorF(D2D1::ColorF::White),
+            &m_textBrush
+        );
+
+        if (FAILED(hr)) {
+            OutputDebugString(L"CreateSolidColorBrush failed\n");
+            return;
         }
     }
 }
@@ -208,6 +258,40 @@ void Renderer::DrawPolygonOutline(const vector<D2D1_POINT_2F>& points, float str
 
     brush->Release();
     geometry->Release();
+}
+
+void Renderer::DrawTextString(
+    const std::wstring& text,
+    float x, float y,
+    float size,
+    D2D1::ColorF color
+) {
+
+    // ★ フォントサイズに応じて TextFormat を作り直す
+    IDWriteTextFormat* format = nullptr;
+    m_writeFactory->CreateTextFormat(
+        L"Segoe UI Symbol",   // ← フォント
+        nullptr,
+        DWRITE_FONT_WEIGHT_NORMAL,
+        DWRITE_FONT_STYLE_NORMAL,
+        DWRITE_FONT_STRETCH_NORMAL,
+        size,                 // ← ここに反映される
+        L"ja-jp",
+        &format
+    );
+
+    // 色変更したい場合だけブラシ更新
+    m_textBrush->SetColor(color);
+
+    m_pRenderTarget->DrawText(
+        text.c_str(),
+        (UINT32)text.size(),
+        format,
+        D2D1::RectF(x, y, x + 1000, y + 200),
+        m_textBrush
+    );
+
+    format->Release();
 }
 
 int Renderer::GetScreenWidth() const { return m_screenWidth; }

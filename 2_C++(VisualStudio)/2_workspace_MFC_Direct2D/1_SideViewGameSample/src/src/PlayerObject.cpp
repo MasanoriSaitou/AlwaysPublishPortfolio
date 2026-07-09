@@ -44,7 +44,7 @@ PlayerObject::PlayerObject(float _x, float _y, D2D1::ColorF _color)
 //    }
 //}
 
-void PlayerObject::Draw(Renderer& renderer,const Camera& camera) {
+void PlayerObject::Draw(Renderer& renderer,const Camera& camera,int hp) {
 
     //PlayerInfoİ’è
     currentPlayerInfo = playerInfo;
@@ -84,4 +84,8 @@ void PlayerObject::Draw(Renderer& renderer,const Camera& camera) {
     // •`‰æiCamera ‘Î‰”Å DrawStickMan ‚ğŒÄ‚Ôj
     //drawX = x - cameraX; 
     GameLibrary::DrawStickMan(currentPlayerInfo, renderer, x, y, camera);
+
+    //•¶š‚Ì•\¦
+    wstring hearts(hp, L'\u2764');
+    renderer.DrawTextString(hearts, 0, 0, 32.0f, D2D1::ColorF::DeepPink);
 }

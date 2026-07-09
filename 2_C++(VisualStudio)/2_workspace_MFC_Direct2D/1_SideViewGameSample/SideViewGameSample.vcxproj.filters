@@ -213,6 +213,12 @@
     <ClCompile Include="src\src\ThornBlockObject.cpp">
       <Filter>ソース ファイル\GameLogic\GameObject</Filter>
     </ClCompile>
+    <ClCompile Include="src\src\TextObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\GoalObject.cpp">
+      <Filter>ソース ファイル\GameLogic\GameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ClassView.h">
@@ -315,6 +321,12 @@
       <Filter>ヘッダー ファイル\GameLibrary</Filter>
     </ClInclude>
     <ClInclude Include="src\include\ThornBlockObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\TextObject.h">
+      <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\GoalObject.h">
       <Filter>ヘッダー ファイル\GameLogic\GameObject</Filter>
     </ClInclude>
   </ItemGroup>

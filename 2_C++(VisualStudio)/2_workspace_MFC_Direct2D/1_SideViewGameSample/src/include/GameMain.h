@@ -7,6 +7,7 @@
 #include "include/PlayerController.h"
 #include "include/InputKey.h"
 #include "include/Camera.h"
+#include "include/TextObject.h"
 using namespace std;
 
 class GameMain{
@@ -17,6 +18,8 @@ class GameMain{
 	InputKey inputKey;
 	PlayerObject player;
 	StageMapObject stageMapObject;
+	TextObject textObject;
+	TextObject goalTextObject;
 	unique_ptr<RectObject> m_player;
 	unique_ptr<RectObject> m_player2;
 	unique_ptr<PlayerController> pController;

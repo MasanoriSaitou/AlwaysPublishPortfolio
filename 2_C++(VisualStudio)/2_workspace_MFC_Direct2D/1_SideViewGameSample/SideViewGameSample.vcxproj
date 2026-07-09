@@ -99,6 +99,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>dwrite.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -119,9 +120,11 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(ProjectDir)src</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>dwrite.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -237,6 +240,7 @@
     <ClCompile Include="src\src\Camera.cpp" />
     <ClCompile Include="src\src\CircleObject.cpp" />
     <ClCompile Include="src\src\GameMain.cpp" />
+    <ClCompile Include="src\src\GoalObject.cpp" />
     <ClCompile Include="src\src\KillBlockObject.cpp" />
     <ClCompile Include="src\src\LineObject.cpp" />
     <ClCompile Include="src\src\PlayerController.cpp" />
@@ -246,6 +250,7 @@
     <ClCompile Include="src\src\Renderer.cpp" />
     <ClCompile Include="src\src\StageMap.cpp" />
     <ClCompile Include="src\src\StageMapObject.cpp" />
+    <ClCompile Include="src\src\TextObject.cpp" />
     <ClCompile Include="src\src\ThornBlockObject.cpp" />
     <ClCompile Include="src\src\TileMap.cpp" />
     <ClCompile Include="src\src\TileMapObject.cpp" />
@@ -261,6 +266,7 @@
     <ClInclude Include="src\include\CircleObject.h" />
     <ClInclude Include="src\include\CollisionResult.h" />
     <ClInclude Include="src\include\GameMain.h" />
+    <ClInclude Include="src\include\GoalObject.h" />
     <ClInclude Include="src\include\InputKey.h" />
     <ClInclude Include="src\include\KillBlockObject.h" />
     <ClInclude Include="src\include\LineObject.h" />
@@ -272,6 +278,7 @@
     <ClInclude Include="src\include\Renderer.h" />
     <ClInclude Include="src\include\StageMap.h" />
     <ClInclude Include="src\include\StageMapObject.h" />
+    <ClInclude Include="src\include\TextObject.h" />
     <ClInclude Include="src\include\ThornBlockObject.h" />
     <ClInclude Include="src\include\TileMap.h" />
     <ClInclude Include="src\include\TileMapObject.h" />

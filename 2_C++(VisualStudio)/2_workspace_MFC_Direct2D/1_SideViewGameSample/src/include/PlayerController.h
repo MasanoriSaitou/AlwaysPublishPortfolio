@@ -3,8 +3,9 @@
 #include "InputKey.h"
 
 #pragma once
-class PlayerController
-{
+class PlayerController{
+
+private:
 	PlayerObject& player;
 	InputKey& inputKey;
 	double delta;
@@ -15,6 +16,7 @@ class PlayerController
 	double speed = 300.0; //800 // 1秒あたり100px の速度
 	double fallTime = 0.0f;  //落下時間計測
 	bool isDead; //死亡フラグ
+	bool isGoal; //ゴールフラグ
 	bool isInvincible = false;    //無敵状態フラグ
 	float invincibleTimer = 0.0f; //無敵時間タイマー
 
@@ -38,9 +40,11 @@ public:
 	void ApplyMovement(StageMap& map);
 	void KillPlayer(bool isBounce = true);
 	bool IsPlayerDead() const;
+	bool IsPlayerGoal() const;
 	void Jump();
 	void AirWalk();
 	void AirWalkFree();
 	void Damage();
+	int GetPowerUpLevel() const;
 };
 

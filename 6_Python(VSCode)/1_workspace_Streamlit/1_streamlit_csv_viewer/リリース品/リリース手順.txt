@@ -1,21 +1,18 @@
-‡@ PyInstaller ‚ðƒCƒ“ƒXƒg[ƒ‹
-VSCode ‚Ìƒ^[ƒ~ƒiƒ‹‚ÅF
+â‘  PyInstaller ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+VSCode ã®ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã§ï¼š
 pip install pyinstaller
 
-‡A ƒvƒƒWƒFƒNƒgƒtƒHƒ‹ƒ_‚ÖˆÚ“®
-cd ƒvƒƒWƒFƒNƒg‚ÌƒtƒHƒ‹ƒ_
+â‘¡ ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆãƒ•ã‚©ãƒ«ãƒ€ã¸ç§»å‹•
+cd ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ•ã‚©ãƒ«ãƒ€
 
-‡B EXE ‚ðì‚éƒRƒ}ƒ“ƒh
+â‘¢ EXE ã‚’ä½œã‚‹ã‚³ãƒžãƒ³ãƒ‰
 pyinstaller --noconfirm --onefile app.py
 
 
-‚±‚ê‚Å dist/app.exe‚ª¶¬‚³‚ê‚éB
+ã“ã‚Œã§ dist/app.exeãŒç”Ÿæˆã•ã‚Œã‚‹ã€‚
 
 
-«
-Ž¸”s
-«
-ˆÈ‰º‚Ìƒoƒbƒ`‚ðì¬‚µAƒoƒbƒ`‚ð‹N“®‚µ‚ÄŽÀs
-@echo off
-powershell -WindowStyle Hidden -Command "Start-Process streamlit -ArgumentList 'run app.py'"
-exit
+â†“
+å¤±æ•—
+â†“
+ãƒãƒƒãƒã‚’ä½œæˆã—ã€ãƒãƒƒãƒã‚’èµ·å‹•ã—ã¦å®Ÿè¡Œã™ã‚‹æ–¹æ³•ã¨ã—ãŸã€‚

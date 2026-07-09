@@ -10,6 +10,7 @@ PlayerController::PlayerController(PlayerObject& p,InputKey& i)
 	direY(0),
 	delta(0),
 	isDead(false),
+	isGoal(false),
 	isJump(0),
 	canJump(false),
 	canDoubleJump(false),
@@ -34,7 +35,7 @@ void PlayerController::Update(double delta, StageMap& map) {
 	this->delta = delta;
 
 	//プレイヤー死亡判定
-	if (!isDead) {
+	if (!isDead && !isGoal) {
 
 		// --- ダメージ直後の無敵状態 ---
 		if (isInvincible) {
@@ -70,6 +71,13 @@ void PlayerController::Update(double delta, StageMap& map) {
 		//if (canAttack) Attack();
 		if (canAirWalk) AirWalk();
 		if (canAirWalkFree) AirWalkFree();
+	}else {
+
+		//死亡またはゴール
+		// 入力無効にする
+		direX = 0;
+		direY = 0;
+		velocityX = 0.0f; // 横移動は止める
 	}
 
 	//3段階目のパワーアップの時以外は、世界の重力を常に受け続ける
@@ -268,6 +276,12 @@ void PlayerController::ApplyMovement(StageMap& map) {
 				KillPlayer(false);
 				return;
 			}
+			//ゴールに触れた
+			case TileType::Goal: {
+
+				isGoal = true;
+				return;
+			}
 			//パワーアップブロックに触れた
 			case TileType::PowerUp1: {
 
@@ -281,12 +295,8 @@ void PlayerController::ApplyMovement(StageMap& map) {
 				Damage();
 				break;
 			}
-			//ゴールに触れた
-			case TileType::Goal: {
-				//ReachGoal();
-				return;
-			}
 			default: {
+
 				break;
 			}
 		}
@@ -310,11 +320,6 @@ void PlayerController::KillPlayer(bool isBounce) {
 		velocityY = -1000.0f;   // 好きな値に調整
 		isGrounded = false; //空中へ
 	}
-
-	// 入力無効にする
-	direX = 0;
-	direY = 0;
-	velocityX = 0.0f; // 横移動は止める
 }
 
 /// <summary>
@@ -325,4 +330,23 @@ void PlayerController::KillPlayer(bool isBounce) {
 bool PlayerController::IsPlayerDead() const{
 	
 	return isDead;
+}
+
+/// <summary>
+/// IsPlayerGoal
+/// </summary>
+/// プレイヤーがゴールしたかを判定する
+/// <returns></returns>
+bool PlayerController::IsPlayerGoal() const {
+
+	return isGoal;
+}
+
+int PlayerController::GetPowerUpLevel() const {
+
+	if (isDead) {
+
+		return 0;
+	}
+	return (int)powerUpLevel;
 }

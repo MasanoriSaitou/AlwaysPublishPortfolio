@@ -75,7 +75,7 @@ void GameLibrary::DrawBlock(Renderer& renderer, int x, int y,float offsetY, cons
 void GameLibrary::DrawStickMan(const StickManInfo& info, Renderer& renderer, float x,float y,const Camera& camera) {
 
     //拡大率(棒人間と合わせること）
-    float const bigRate = 1.3f;
+    const float bigRate = 1.3f;
 
     // --- カメラ変換（世界 → 画面） ---
     x = camera.WorldToScreenX(x)* bigRate; //カメラのX座標をスクロールに使用

@@ -13,19 +13,34 @@ import streamlit as st
 #データ保持領域に変数readCntがなければ新規で作る
 if "readCnt" not in st.session_state:
     st.session_state.readCnt = -1
+#起動時引数を読み込む
+import argparse
 
 #ソフトのタイトル
 st.title("CSV データ可視化ツール")
 
+# 引数パーサー
+parser = argparse.ArgumentParser()
+parser.add_argument("--csv", default=None)
+args = parser.parse_args()
+
+df :DataFrame = None
+# C# からパスが渡された場合
+if args.csv is not None:
+    st.write("読み込んだCSV：", args.csv)
+    df = pd.read_csv(args.csv)
+
 #CSV ファイルをアップロードする UI
-uploaded_file :Optional[st.runtime.uploaded_file_manager.UploadedFile] = \
-    st.file_uploader("CSV をアップロードしてください", type="csv")
+else:
+    uploaded_file :Optional[st.runtime.uploaded_file_manager.UploadedFile] = \
+        st.file_uploader("CSV をアップロードしてください", type="csv")
+    if uploaded_file is not None:
+        #アップロードされた CSV を pandas の DataFrame として読み込む
+        df = pd.read_csv(uploaded_file)
 
 #ファイルがアップロードされたときだけ処理を進める　→Streamlit はページを何度も再実行する仕組みなので、この条件がないとエラーになる。
-if uploaded_file is not None:
+if df is not None:
 
-    #アップロードされた CSV を pandas の DataFrame として読み込む
-    df :DataFrame = pd.read_csv(uploaded_file)
     #データの先頭5行を表示  df.head()は最初の5行の抽出、st.write() は何でも表示できる万能関数
     st.write("データプレビュー", df.head())
 

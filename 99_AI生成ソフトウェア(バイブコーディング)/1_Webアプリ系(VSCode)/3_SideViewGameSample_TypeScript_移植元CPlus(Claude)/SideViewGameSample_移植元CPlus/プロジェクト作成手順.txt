@@ -1,0 +1,11 @@
+//React + Vite + TypeScriptにて、プロジェクト新規作成(空のフォルダで作ること)
+npm create vite@latest . -- --template react-ts
+
+//必要なライブラリをインストールするなど
+npm install
+
+//ローカル起動(エラーチェックが甘い)
+npm run dev
+
+//エラー箇所も厳格にチェック
+npm run build

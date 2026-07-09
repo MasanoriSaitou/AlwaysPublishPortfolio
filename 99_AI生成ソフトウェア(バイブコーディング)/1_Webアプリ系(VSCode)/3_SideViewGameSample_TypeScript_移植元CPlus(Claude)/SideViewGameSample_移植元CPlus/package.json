@@ -1,0 +1,17 @@
+{
+  "name": "sideviewgamesample-ts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SideViewGameSample (C++ MFC) の TypeScript / Canvas2D への移植版",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "test": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vite": "^5.4.21"
+  }
+}

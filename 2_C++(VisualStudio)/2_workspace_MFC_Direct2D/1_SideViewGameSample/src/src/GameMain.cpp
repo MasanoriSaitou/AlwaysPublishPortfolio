@@ -6,7 +6,9 @@ GameMain::GameMain(Renderer& r)
 	: renderer(r)
 	, inputKey()
     , player(60, 300, D2D1::ColorF(D2D1::ColorF::Blue))
-	, stageMapObject(){
+	, stageMapObject()
+	, textObject()
+	, goalTextObject(){
 
 	Initialize();
 }
@@ -50,6 +52,18 @@ void GameMain::Update(double delta) {
 			Initialize();
 		}
 	}
+
+	if (pController->IsPlayerGoal()) {
+
+		isWaitingRespawn = true;
+		deathTimer += delta;
+
+		if (deathTimer >= 5.0) {
+
+			// 5秒経過 → ゲーム初期化
+			Initialize();
+		}
+	}
 }
 
 void GameMain::Draw() {
@@ -61,5 +75,15 @@ void GameMain::Draw() {
 	m_ball->Draw(renderer);
 	m_line->Draw(renderer);
 	// プレイヤーを描画
-	player.Draw(renderer,*camera);
+	player.Draw(renderer,*camera, pController->GetPowerUpLevel());
+	//文字列表示
+	textObject.Draw(L"操作方法　A：左移動　D：右移動　W：ジャンプ", 50, 400, 40.0f, D2D1::ColorF::Red,renderer,camera.get());
+	//ゴール表示
+	if (pController->IsPlayerGoal()) {
+
+		goalTextObject.Draw(L"ゴール！！", 600, 200, 100.0f, D2D1::ColorF::Aqua, renderer);
+	}else if (pController->IsPlayerDead()) {
+
+		goalTextObject.Draw(L"ミス・・・", 600, 200, 100.0f, D2D1::ColorF::Green, renderer);
+	}
 }
