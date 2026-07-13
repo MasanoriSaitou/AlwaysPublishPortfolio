@@ -1,10 +1,11 @@
 import { GameUI } from "../view/GameUI"
 
 export class GameLogic {
+
   private playerHp : number = 3;
   private cpuHp : number = 3;
 
-  constructor(
+  public constructor(
     private ui: GameUI
   ) {}
 

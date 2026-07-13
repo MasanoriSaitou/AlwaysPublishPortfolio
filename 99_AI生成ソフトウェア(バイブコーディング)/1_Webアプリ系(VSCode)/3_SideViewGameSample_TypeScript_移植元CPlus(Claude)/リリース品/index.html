@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SideViewGameSample</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+            /* モバイルでのタッチ操作時にブラウザ標準のスクロール/ズーム挙動を抑制する */
+            touch-action: none;
+        }
+
+        /*
+         * #gameRoot: ScreenOrientationController が回転対象にする専用コンテナ。
+         * ビューポート基準(vw/vh)のサイズはここだけに閉じ込め、
+         * #gameCanvas はこのコンテナに対する 100% 指定にすることで、
+         * 回転時にコンテナの幅・高さがインラインスタイルで上書きされても
+         * canvas の表示サイズと必ず一致するようにする
+         * (以前は canvas 自体が vw/vh を使っていたため、回転後の
+         * コンテナサイズとcanvasの表示サイズが食い違い、画面の大部分が
+         * body の背景色(黒)で覆われてしまうバグがあった)。
+         */
+        #gameRoot {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #gameCanvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+  <script type="module" crossorigin src="./assets/index-DNnCp1_Z.js"></script>
+</head>
+<body>
+    <div id="gameRoot">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+</body>
+</html>

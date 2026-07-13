@@ -1,9 +1,10 @@
 import { GameLogic } from "../model/main"
 
 export class GameUI {
-  logic: GameLogic;
+  
+  private logic: GameLogic;
 
-  constructor() {
+  public constructor() {
     console.log("GameUI is constructor called!!");
 
     this.logic = new GameLogic(this);
@@ -22,24 +23,24 @@ export class GameUI {
     this.resetGame();
   }
 
-  updatePlayerHp(hp: number) {
+  public updatePlayerHp(hp: number) {
     document.getElementById("player-hp")!.textContent = "💛".repeat(hp);
   }
 
-  updateCpuHp(hp: number) {
+  public updateCpuHp(hp: number) {
     document.getElementById("cpu-hp")!.textContent = "💜".repeat(hp);
   }
 
-  showMessage(msg: string) {
+  public showMessage(msg: string) {
     document.getElementById("message")!.textContent = msg;
   }
 
-  showRetryButton() {
+  public showRetryButton() {
     (document.getElementById("buttons") as HTMLElement).style.display = "none";
     (document.getElementById("retry") as HTMLElement).style.display = "block";
   }
 
-  resetGame() {
+  public resetGame() {
     this.logic.reset();
 
     this.updatePlayerHp(3);
